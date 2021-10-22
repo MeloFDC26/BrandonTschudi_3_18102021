@@ -1,0 +1,22 @@
+{
+  "name": "brandontschudi_3_18102021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/pages:./public/css",
+    "prefix": "postcss ./public/css/homepage.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+     
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeloFDC26/BrandonTschudi_3_18102021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeloFDC26/BrandonTschudi_3_18102021/issues"
+  },
+  "homepage": "https://github.com/MeloFDC26/BrandonTschudi_3_18102021#readme",
+  "browserslist":"last 4 versions"
+}
