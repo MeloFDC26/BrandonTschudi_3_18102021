@@ -12,4 +12,15 @@
   cursor: pointer;
 }
 
+.fa-heart {
+  color: white;
+  background-color: black;
+  /* pour le voir */
+}
+
+.fa-heart:hover {
+  cursor: pointer;
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+
 /*# sourceMappingURL=homepage.css.map */
