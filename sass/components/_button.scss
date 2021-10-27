@@ -1,0 +1,13 @@
+.button_component{
+    color: white;
+    background: linear-gradient($color-secondary, $color-primary);
+    border-radius: 50px;
+    border-width: 0px !important;
+    height: 50px;
+    padding: 0px 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    &:hover{
+        filter: brightness(1.2);
+        cursor: pointer;
+    }
+}
