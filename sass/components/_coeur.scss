@@ -1,0 +1,12 @@
+@import "../utils/variables";
+
+.fa-heart {
+    color: white;
+    background-color: black; /* pour le voir */
+    
+}
+
+.fa-heart:hover{
+    cursor: pointer;
+    background: linear-gradient($color-primary, $color-secondary);
+}
