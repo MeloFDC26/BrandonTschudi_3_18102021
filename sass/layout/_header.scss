@@ -1,0 +1,20 @@
+@import "../utils/variables";
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    & img{
+        max-width: 70%;
+        padding-bottom: 10px;
+    }
+    & .localisation_header{
+        background-color: gray;
+    }
+    & .box_header{
+        background-color: gray;
+        padding: 20px;
+    }
+}
