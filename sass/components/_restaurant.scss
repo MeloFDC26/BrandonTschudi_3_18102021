@@ -1,0 +1,39 @@
+@import "../utils/variables";
+
+.carte_restaurant{
+    border: 2px solid white;
+    border-radius: 10% 10% 10% 10%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: left;
+    font-size: medium;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 0px; 
+    min-width: 32%;
+    & img{
+        border-radius: 20px 20px 0 0;
+        padding-bottom: 0px;
+        object-fit: cover;
+        min-width: 200px;
+    }
+    & .label_nouveau{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 5px;
+        background-color: $color-tertiary;
+        border-radius: 2px;
+    }
+    & .nom_restaurant{
+        font-weight: bold;
+    }
+    & i{
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+    }
+}
