@@ -147,6 +147,7 @@ header .localisation_header {
 header .box_header {
   background-color: gray;
   padding: 20px;
+  min-width: 100%;
 }
 
 /*# sourceMappingURL=homepage.css.map */
