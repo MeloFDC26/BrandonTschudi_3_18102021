@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+
 @import "../utils/variables";
 @import "../components/button";
 @import "../components/coeur";
@@ -5,3 +7,12 @@
 @import "../components/restaurant";
 @import "../layout/footer";
 @import "../layout/header";
+
+
+body{
+    font-family: $main-font, sans-serif;
+}
+
+.logo_ohmyfood{
+    font-family: $title-font, cursive;
+}

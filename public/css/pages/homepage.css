@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
 .button_component {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -166,6 +167,14 @@ header .box_header {
   background-color: gray;
   padding: 20px;
   min-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo_ohmyfood {
+  font-family: "Shrikhand", cursive;
 }
 
 /*# sourceMappingURL=homepage.css.map */
