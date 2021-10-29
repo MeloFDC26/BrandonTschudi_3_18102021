@@ -109,4 +109,23 @@ footer li .fa-hands-helping {
   padding-right: 8px;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header img {
+  max-width: 70%;
+  padding-bottom: 10px;
+}
+header .localisation_header {
+  background-color: gray;
+}
+header .box_header {
+  background-color: gray;
+  padding: 20px;
+}
+
 /*# sourceMappingURL=homepage.css.map */
