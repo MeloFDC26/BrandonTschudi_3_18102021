@@ -1,0 +1,26 @@
+@import "../utils/variables";
+
+footer{
+    background-color: gray;
+    text-align: left;
+    & img{
+        position: relative;
+        max-width: 30%;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    & ul{
+        padding-left: 20px;
+    }
+}
+
+footer li{
+    list-style-type: none;
+    color: white;
+    & .fa-utensils{
+        padding-right: 15px;
+    }
+    & .fa-hands-helping{
+        padding-right: 8px;
+    }
+}
