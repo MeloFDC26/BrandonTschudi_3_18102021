@@ -46,9 +46,13 @@ button:hover {
   cursor: pointer;
 }
 
+.restaurants {
+  background-color: gray;
+}
+
 .carte_restaurant {
-  border: 2px solid white;
-  border-radius: 10% 10% 10% 10%;
+  border: 0px solid white;
+  border-radius: 20px;
   background-color: white;
   display: flex;
   position: relative;
@@ -59,13 +63,19 @@ button:hover {
   height: auto;
   margin-bottom: 10px;
   margin-left: 0px;
+  margin-top: 0px;
   min-width: 32%;
 }
 .carte_restaurant img {
   border-radius: 20px 20px 0 0;
-  padding-bottom: 0px;
+  padding: 0px;
+  margin: 0;
   object-fit: cover;
-  min-width: 200px;
+  min-width: 180px;
+}
+.carte_restaurant .label_restaurant {
+  display: flex;
+  flex-direction: column;
 }
 .carte_restaurant .label_nouveau {
   position: absolute;
@@ -77,11 +87,18 @@ button:hover {
 }
 .carte_restaurant .nom_restaurant {
   font-weight: bold;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.carte_restaurant .lieu_restaurant {
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 .carte_restaurant i {
   position: absolute;
   right: 20px;
-  bottom: 15px;
+  bottom: 30px;
 }
 
 footer {
