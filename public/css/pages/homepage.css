@@ -89,7 +89,7 @@ button:hover {
   padding: 0px;
   margin: 0;
   object-fit: cover;
-  min-width: 180px;
+  min-width: 200px;
 }
 .carte_restaurant .label_restaurant {
   display: flex;
