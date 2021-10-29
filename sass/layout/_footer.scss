@@ -14,13 +14,17 @@ footer{
     }
 }
 
-footer li{
-    list-style-type: none;
+footer a{
     color: white;
+    text-decoration: none;
     & .fa-utensils{
         padding-right: 15px;
     }
     & .fa-hands-helping{
         padding-right: 8px;
     }
+}
+
+footer li{
+    list-style-type: none;
 }
