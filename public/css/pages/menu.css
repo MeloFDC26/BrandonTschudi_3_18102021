@@ -36,6 +36,22 @@
   animation-duration: 1000ms;
 }
 
+.menu {
+  background-color: #f3f3f3;
+}
+
+.carte_plat {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+}
+.carte_plat .label_et_prix {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 footer {
   display: flex;
   flex-direction: column;

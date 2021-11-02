@@ -1,0 +1,17 @@
+@import "../utils/variables";
+
+.menu{
+    @include gray-degrade($color-gray);
+}
+
+.carte_plat{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    & .label_et_prix{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
