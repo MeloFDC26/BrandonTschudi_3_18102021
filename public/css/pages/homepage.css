@@ -99,7 +99,6 @@ button:hover {
 .title_restaurants {
   display: flex;
   text-align: left;
-  padding-left: 10px;
 }
 
 .carte_restaurant {
@@ -157,13 +156,19 @@ button:hover {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: gray;
   text-align: left;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
 }
 footer img {
   position: relative;
   max-width: 30%;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-top: 20px;
 }
 footer ul {
@@ -183,6 +188,7 @@ footer a .fa-hands-helping {
 
 footer li {
   list-style-type: none;
+  margin: 5px;
 }
 
 header {
@@ -239,6 +245,10 @@ body {
 
 .logo_ohmyfood {
   font-family: "Shrikhand", cursive;
+}
+
+#buttons_fonctionnement h1, .restaurants h1 {
+  padding-left: 25px;
 }
 
 /*# sourceMappingURL=homepage.css.map */
