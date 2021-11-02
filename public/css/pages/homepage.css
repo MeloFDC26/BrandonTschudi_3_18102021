@@ -192,6 +192,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: brightness(gray, 15%);
 }
 header img {
   max-width: 70%;
@@ -199,10 +200,30 @@ header img {
 }
 header .localisation_header {
   background-color: gray;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .localisation_header i {
+  margin-right: 20px;
+}
+header .localisation_header .label_localisation {
+  margin-right: 20px;
+}
+header .localisation_header h1 {
+  margin-top: 10px;
 }
 header .box_header {
-  background-color: gray;
+  background-color: lightgray;
+  position: relative;
   padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   min-width: 100%;
 }
 
