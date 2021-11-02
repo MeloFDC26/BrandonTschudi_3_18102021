@@ -46,10 +46,7 @@
   margin-top: 20px;
 }
 #buttons_fonctionnement h1 {
-  position: relative;
-  align-items: left;
-  justify-content: left;
-  float: left;
+  align-self: flex-start;
 }
 #buttons_fonctionnement button {
   font-weight: bold;

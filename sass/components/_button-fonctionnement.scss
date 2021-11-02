@@ -7,10 +7,7 @@
     margin-bottom: 50px;
     margin-top: 20px;
     & h1{
-        position: relative;
-        align-items: left;
-        justify-content: left;
-        float: left;
+        align-self: flex-start;
     }
     & button{
         font-weight: bold;
