@@ -9,7 +9,7 @@ header{
     & img{
         max-width: 70%;
         padding-bottom: 15px;
-        padding-top: 5px;
+        padding-top: 15px;
     }
     & .localisation_header{
         background-color: lightgray;
@@ -33,7 +33,6 @@ header{
         flex-direction: column;
         @include gray-degrade($color-gray);
         position: relative;
-        padding: 20px;
         padding-top: 60px;
         padding-bottom: 60px;
         min-width: 100%;

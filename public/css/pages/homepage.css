@@ -198,7 +198,7 @@ header {
 header img {
   max-width: 70%;
   padding-bottom: 15px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 header .localisation_header {
   background-color: lightgray;
@@ -222,7 +222,6 @@ header .box_header {
   flex-direction: column;
   background-color: #f3f3f3;
   position: relative;
-  padding: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
   min-width: 100%;
@@ -238,6 +237,7 @@ header .box_header #label_h1_header {
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .logo_ohmyfood {
