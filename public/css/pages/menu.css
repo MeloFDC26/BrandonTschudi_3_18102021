@@ -1,3 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+.button_component {
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  border-width: 0px !important;
+  height: 50px;
+  padding: 0px 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  max-width: 50%;
+}
+.button_component:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
 
+@keyframes remplissage-coeur {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.fa-heart {
+  color: linear-gradient(#9356DC, #FF79DA);
+  background-color: white;
+  /* pour le voir */
+}
+
+.fa-heart:hover {
+  cursor: pointer;
+  background: linear-gradient(#9356DC, #FF79DA);
+  transform: scaleY(1);
+  animation-name: remplissage-coeur;
+  animation-duration: 1000ms;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: gray;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+footer img {
+  position: relative;
+  max-width: 30%;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+footer ul {
+  padding-left: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a .fa-utensils {
+  padding-right: 15px;
+}
+footer a .fa-hands-helping {
+  padding-right: 8px;
+}
+
+footer li {
+  list-style-type: none;
+  margin: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header img {
+  max-width: 70%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+header .localisation_header {
+  background-color: lightgray;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .localisation_header i {
+  margin-right: 20px;
+}
+header .localisation_header .label_localisation {
+  margin-right: 20px;
+}
+header .box_header {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-width: 100%;
+  text-align: center;
+  align-items: center;
+}
+header .box_header h1 {
+  margin-top: 30px;
+}
+header .box_header #label_h1_header {
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.logo_ohmyfood {
+  font-family: "Shrikhand", cursive;
+}
+
+header .box_header {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a :visited {
+  color: black;
+}
+header i {
+  padding-right: 30px;
+}
+header img {
+  padding-right: 40px;
+}
 
 /*# sourceMappingURL=menu.css.map */
