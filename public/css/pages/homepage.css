@@ -156,6 +156,10 @@ button:hover {
   bottom: 30px;
 }
 
+#buttons_fonctionnement i:active {
+  color: #9356DC;
+}
+
 footer {
   display: flex;
   flex-direction: column;
