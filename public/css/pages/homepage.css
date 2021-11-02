@@ -99,6 +99,7 @@ button:hover {
 .title_restaurants {
   display: flex;
   text-align: left;
+  margin-top: 50px;
 }
 
 .carte_restaurant {
