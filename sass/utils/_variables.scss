@@ -5,3 +5,7 @@ $color-gray: gray;
 
 $main-font: "Roboto";
 $title-font: "Shrikhand";
+
+@mixin gray-degrade($color: $color-gray) {
+    background-color: lighten($color, 45%);
+}

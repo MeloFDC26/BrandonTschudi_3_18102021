@@ -87,8 +87,9 @@ button:hover {
 .restaurants {
   display: flex;
   flex-direction: column;
-  background-color: gray;
+  background-color: #f3f3f3;
   margin-bottom: 20px;
+  min-width: 100%;
 }
 
 .ensemble_restaurants {

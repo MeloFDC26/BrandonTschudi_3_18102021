@@ -3,8 +3,9 @@
 .restaurants{
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    @include gray-degrade($color-gray);
     margin-bottom: 20px;
+    min-width: 100%;
 }
 
 .ensemble_restaurants{
