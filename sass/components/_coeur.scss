@@ -1,12 +1,24 @@
 @import "../utils/variables";
 
+@keyframes remplissage-coeur {
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+
 .fa-heart {
-    color: white;
-    background-color: black; /* pour le voir */
+    color: linear-gradient($color-primary, $color-secondary);
+    background-color: white; /* pour le voir */
     
 }
 
 .fa-heart:hover{
     cursor: pointer;
     background: linear-gradient($color-primary, $color-secondary);
+    transform: scaleY(1);
+    animation-name: remplissage-coeur;
+    animation-duration: 1000ms;
 }
