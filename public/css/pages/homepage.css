@@ -192,14 +192,13 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: brightness(gray, 15%);
 }
 header img {
   max-width: 70%;
   padding-bottom: 10px;
 }
 header .localisation_header {
-  background-color: gray;
+  background-color: lightgray;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -219,7 +218,7 @@ header .localisation_header h1 {
   margin-top: 10px;
 }
 header .box_header {
-  background-color: lightgray;
+  background-color: #f3f3f3;
   position: relative;
   padding: 20px;
   padding-top: 60px;

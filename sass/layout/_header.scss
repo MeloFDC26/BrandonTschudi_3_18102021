@@ -1,7 +1,7 @@
 @import "../utils/variables";
 
 @mixin gray-degrade($color: $color-gray) {
-    background-color: brightness($color, 15%);
+    background-color: lighten($color, 45%);
 }
 
 header{
@@ -10,13 +10,12 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
-    @include gray-degrade($color-gray);
     & img{
         max-width: 70%;
         padding-bottom: 10px;
     }
     & .localisation_header{
-        background-color: gray;
+        background-color: lightgray;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -36,7 +35,7 @@ header{
         }
     }
     & .box_header{
-        background-color: lightgray;
+        @include gray-degrade($color-gray);
         position: relative;
         padding: 20px;
         padding-top: 60px;
