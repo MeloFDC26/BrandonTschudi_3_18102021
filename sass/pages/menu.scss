@@ -34,11 +34,15 @@ header .box_header{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        & h1{
-            
-        }
+        align-self: flex-start;
+        padding-left: 20px;
         & i{
             @include gray-degrade($color-gray);
+            position: absolute;
+            right: 30px; 
         }
     }
+    & .type_plat{
+        text-align: left !important;
+    }       
 }
