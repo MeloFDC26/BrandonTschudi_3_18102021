@@ -1,5 +1,6 @@
 @import "../base/typography";
 @import "../utils/variables";
+@import "../utils/mixins";
 @import "../components/button";
 @import "../components/coeur";
 @import "../components/button-fonctionnement";
@@ -8,5 +9,5 @@
 @import "../layout/header";
 
 .buttons_fonctionnement, .restaurants{
-    padding: 20px;
+    
 }

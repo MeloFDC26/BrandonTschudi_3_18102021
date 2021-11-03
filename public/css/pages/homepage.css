@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-.logo_ohmyfood {
+.logo_ohmyfood, .top_menu h1 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -249,10 +249,6 @@ header .box_header h1 {
 }
 header .box_header #label_h1_header {
   margin-bottom: 20px;
-}
-
-.buttons_fonctionnement, .restaurants {
-  padding: 20px;
 }
 
 /*# sourceMappingURL=homepage.css.map */
