@@ -1,0 +1,10 @@
+@mixin gray-degrade($color: $color-gray) {
+    background-color: lighten($color, 45%);
+}
+
+@mixin flex($direction, $justify, $align: baseline) {
+    display: flex; 
+    align-items: $align;
+    flex-direction: $direction;
+    justify-content: $justify;
+}

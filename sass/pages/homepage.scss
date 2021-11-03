@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
-
+@import "../base/typography";
 @import "../utils/variables";
 @import "../components/button";
 @import "../components/coeur";
@@ -8,16 +7,6 @@
 @import "../layout/footer";
 @import "../layout/header";
 
-
-body{
-    font-family: $main-font, sans-serif;
-    margin: 0;
-}
-
-.logo_ohmyfood{
-    font-family: $title-font, cursive;
-}
-
-#buttons_fonctionnement h1, .restaurants h1 {
-    padding-left: 25px;
+.buttons_fonctionnement, .restaurants{
+    padding: 20px;
 }

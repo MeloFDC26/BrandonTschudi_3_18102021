@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.logo_ohmyfood {
+  font-family: "Shrikhand", cursive;
+}
+
 .button_component {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -8,6 +17,7 @@
   padding: 0px 15px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   max-width: 50%;
+  min-width: 175px;
 }
 .button_component:hover {
   filter: brightness(1.2);
@@ -118,6 +128,7 @@ button:hover {
 
 footer {
   display: flex;
+  align-items: baseline;
   flex-direction: column;
   justify-content: space-between;
   background-color: gray;
@@ -154,15 +165,12 @@ footer li {
 
 header {
   display: flex;
+  align-items: baseline;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: baseline;
 }
 header img {
-  max-width: 70%;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  width: 200px;
 }
 header .localisation_header {
   background-color: lightgray;
@@ -199,54 +207,27 @@ header .box_header #label_h1_header {
   margin-bottom: 20px;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-}
-
-.logo_ohmyfood, .menu h1 {
-  font-family: "Shrikhand", cursive;
-}
-
 header .box_header {
   display: none;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+.img_header_menu {
+  position: absolute;
+  top: 75px;
 }
-header .head_header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-header a {
-  text-decoration: none;
-  color: black;
-}
-header a :visited {
-  color: black;
-}
-header i {
-  padding-right: 30px;
-}
-header .logo_ohmyfood {
-  padding-right: 40px;
-}
-header .img_header_menu {
-  min-width: 100%;
+.img_header_menu img {
+  width: 100%;
 }
 
 .menu {
+  position: relative;
   background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 100%;
+  margin-top: 200px;
+  border-radius: 20px 20px 0 0;
 }
 .menu .top_menu {
   display: flex;

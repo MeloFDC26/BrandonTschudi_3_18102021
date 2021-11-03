@@ -1,9 +1,8 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex(column, space-between);
     background-color: gray;
     text-align: left;
     margin-top: 40px;

@@ -1,15 +1,10 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    @include flex(column, baseline, baseline);
     & img{
-        max-width: 70%;
-        padding-bottom: 15px;
-        padding-top: 15px;
+        width: 200px;
     }
     & .localisation_header{
         background-color: lightgray;
