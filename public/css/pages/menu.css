@@ -97,7 +97,7 @@ button:hover {
   align-items: center;
   text-align: center;
   margin-bottom: 10px;
-  min-width: 80%;
+  min-width: 90%;
 }
 .ensemble_plats .carte_plat {
   display: flex;
