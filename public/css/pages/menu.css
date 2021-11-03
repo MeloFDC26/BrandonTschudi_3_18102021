@@ -244,6 +244,8 @@ header .box_header {
 }
 .menu .type_plat {
   text-align: left !important;
+  font-weight: unset !important;
+  border-bottom: 3px solid #99E2D0;
 }
 
 /*# sourceMappingURL=menu.css.map */

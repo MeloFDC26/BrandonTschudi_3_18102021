@@ -44,5 +44,7 @@ header .box_header{
     }
     & .type_plat{
         text-align: left !important;
+        font-weight: unset !important;
+        border-bottom: 3px solid $color-tertiary;
     }       
 }
