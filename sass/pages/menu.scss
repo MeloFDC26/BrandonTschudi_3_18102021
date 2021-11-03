@@ -38,7 +38,7 @@ header .box_header{
             
         }
         & i{
-            
+            @include gray-degrade($color-gray);
         }
     }
 }

@@ -235,5 +235,8 @@ header .box_header {
   justify-content: space-between;
   align-items: center;
 }
+.menu .top_menu i {
+  background-color: #f3f3f3;
+}
 
 /*# sourceMappingURL=menu.css.map */
