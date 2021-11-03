@@ -14,6 +14,51 @@
   cursor: pointer;
 }
 
+.buttons_fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.buttons_fonctionnement h1 {
+  align-self: flex-start;
+}
+.buttons_fonctionnement button {
+  font-weight: bold;
+  position: relative;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 25px 25px 25px 25px;
+  max-height: 70px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-width: 0px !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.buttons_fonctionnement button i {
+  padding-right: 20px;
+}
+.buttons_fonctionnement button .numero_etape_fonctionnement {
+  border-radius: 50px;
+  background-color: #9356DC;
+  color: white;
+  height: 15px;
+  min-width: 15px;
+  padding: 5px;
+  position: absolute;
+  left: -12px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 @keyframes remplissage-coeur {
   0% {
     transform: scaleY(0);
@@ -38,18 +83,54 @@
 
 .menu {
   background-color: #f3f3f3;
-}
-
-.carte_plat {
   display: flex;
   flex-direction: column;
-  border-radius: 25px;
-  background-color: white;
-  color: black;
+  align-items: center;
+  position: relative;
 }
-.carte_plat .label_et_prix {
+.menu .top_menu {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.menu .top_menu i {
+  position: absolute;
+  right: 5px;
+}
+
+.ensemble_plats {
+  border-radius: 20px 20px 0 0;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  min-width: 80%;
+}
+.ensemble_plats .carte_plat {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  margin-bottom: 20px;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 70px;
+  padding-left: 10px;
+}
+.ensemble_plats .carte_plat .nom_plat {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.ensemble_plats .carte_plat .label_et_prix {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ensemble_plats .carte_plat .label_et_prix .prix_plat {
+  position: absolute;
+  right: 2px;
 }
 
 footer {
