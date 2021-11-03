@@ -81,24 +81,6 @@ button:hover {
   animation-duration: 1000ms;
 }
 
-.menu {
-  background-color: #f3f3f3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.menu .top_menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu .top_menu i {
-  position: absolute;
-  right: 5px;
-}
-
 .ensemble_plats {
   border-radius: 20px 20px 0 0;
   justify-content: space-between;
@@ -232,8 +214,15 @@ header .box_header {
 
 header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+header .head_header {
+  display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 header a {
   text-decoration: none;
@@ -245,8 +234,25 @@ header a :visited {
 header i {
   padding-right: 30px;
 }
-header img {
+header .logo_ohmyfood {
   padding-right: 40px;
+}
+header .img_header_menu {
+  min-width: 100%;
+}
+
+.menu {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+}
+.menu .top_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=menu.css.map */
