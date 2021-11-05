@@ -2,7 +2,7 @@
 @import "../utils/mixins";
 
 header{
-    @include flex(column, baseline, baseline);
+    @include flex(column, space-between, center);
     & img{
         width: 200px;
     }

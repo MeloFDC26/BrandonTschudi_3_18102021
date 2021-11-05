@@ -209,9 +209,9 @@ footer li {
 
 header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-direction: column;
-  justify-content: baseline;
+  justify-content: space-between;
 }
 header img {
   width: 200px;
