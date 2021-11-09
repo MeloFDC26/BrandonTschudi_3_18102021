@@ -196,6 +196,7 @@ header .localisation_header i {
 }
 header .localisation_header .label_localisation {
   margin-right: 20px;
+  font-size: medium;
 }
 header .box_header {
   display: flex;
