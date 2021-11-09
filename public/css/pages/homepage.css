@@ -62,7 +62,7 @@ body {
   font-weight: bold;
   position: relative;
   padding: 30px;
-  margin: 10px;
+  margin: 15px;
   border-radius: 25px 25px 25px 25px;
   max-height: 70px;
   min-width: 300px;
@@ -177,7 +177,6 @@ footer {
   justify-content: space-between;
   background-color: gray;
   text-align: left;
-  margin-top: 40px;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
@@ -266,6 +265,11 @@ header .box_header button {
 .buttons_fonctionnement h2, .restaurants h2 {
   align-self: flex-start;
   padding-left: 15px;
+}
+
+.restaurants {
+  margin-bottom: 0px;
+  padding-bottom: 50px;
 }
 
 /*# sourceMappingURL=homepage.css.map */
