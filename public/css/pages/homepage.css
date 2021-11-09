@@ -251,4 +251,9 @@ header .box_header #label_h1_header {
   margin-bottom: 20px;
 }
 
+.buttons_fonctionnement h2, .restaurants h2 {
+  align-self: flex-start;
+  padding-left: 15px;
+}
+
 /*# sourceMappingURL=homepage.css.map */

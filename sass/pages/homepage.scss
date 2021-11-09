@@ -8,6 +8,7 @@
 @import "../layout/footer";
 @import "../layout/header";
 
-.buttons_fonctionnement, .restaurants{
-    
+.buttons_fonctionnement h2, .restaurants h2{
+    align-self: flex-start;
+    padding-left: 15px;
 }
