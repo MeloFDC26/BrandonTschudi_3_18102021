@@ -97,6 +97,7 @@ button:hover {
   align-items: center;
   text-align: center;
   margin-bottom: 10px;
+  margin-top: -55px;
   min-width: 90%;
 }
 .ensemble_plats .carte_plat {
@@ -268,6 +269,7 @@ header .box_header {
   font-weight: unset !important;
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
+  padding-top: 50px;
 }
 .menu button {
   margin-top: 30px;
