@@ -16,7 +16,7 @@ body {
   height: 50px;
   padding: 0px 15px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  max-width: 50%;
+  max-width: 60%;
   min-width: 175px;
 }
 .button_component:hover {
@@ -214,7 +214,15 @@ header {
   justify-content: space-between;
 }
 header img {
-  width: 200px;
+  width: 170px;
+  margin: 15px;
+}
+header .box_img_header {
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
 }
 header .localisation_header {
   background-color: lightgray;
@@ -249,6 +257,9 @@ header .box_header h1 {
 }
 header .box_header #label_h1_header {
   margin-bottom: 20px;
+}
+header .box_header button {
+  margin-top: 15px;
 }
 
 .buttons_fonctionnement h2, .restaurants h2 {
