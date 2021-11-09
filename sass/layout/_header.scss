@@ -14,6 +14,14 @@ header{
         justify-content: center;
         box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
     }
+    & .head_header{
+        display: flex;
+        align-items: center;
+        & a{
+            text-decoration: none;
+            color: black;
+        }
+    }
     & .localisation_header{
         background-color: lightgray;
         align-items: center;

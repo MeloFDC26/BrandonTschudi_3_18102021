@@ -185,6 +185,7 @@ footer img {
   max-width: 30%;
   padding-left: 25px;
   padding-top: 20px;
+  filter: invert(100%);
 }
 footer ul {
   padding-left: 20px;
@@ -222,6 +223,14 @@ header .box_img_header {
   width: 100%;
   justify-content: center;
   box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
+}
+header .head_header {
+  display: flex;
+  align-items: center;
+}
+header .head_header a {
+  text-decoration: none;
+  color: black;
 }
 header .localisation_header {
   background-color: lightgray;

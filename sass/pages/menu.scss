@@ -14,7 +14,7 @@ header .box_header{
 
 .img_header_menu{
     position: absolute;
-    top: 75px;
+    top: 60px;
     & img{
         width: 100%;
     }
@@ -27,7 +27,8 @@ header .box_header{
     flex-direction: column;
     align-items: center;
     min-width: 100%;
-    margin-top: 240px;
+    margin-top: 205px;
+    padding-bottom: 70px;
     border-radius: 20px 20px 0 0;
     & .top_menu{
         display: flex;
@@ -39,12 +40,16 @@ header .box_header{
         & i{
             @include gray-degrade($color-gray);
             position: absolute;
-            right: 30px; 
+            right: 30px;
         }
     }
     & .type_plat{
         text-align: left !important;
         font-weight: unset !important;
         border-bottom: 3px solid $color-tertiary;
-    }       
+        padding-bottom: 5px;
+    } 
+    & button{
+        margin-top: 30px;
+    }      
 }

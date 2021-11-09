@@ -123,7 +123,7 @@ button:hover {
 }
 .ensemble_plats .carte_plat .label_et_prix .prix_plat {
   position: absolute;
-  right: 5px;
+  right: 15px;
 }
 
 footer {
@@ -141,6 +141,7 @@ footer img {
   max-width: 30%;
   padding-left: 25px;
   padding-top: 20px;
+  filter: invert(100%);
 }
 footer ul {
   padding-left: 20px;
@@ -178,6 +179,14 @@ header .box_img_header {
   width: 100%;
   justify-content: center;
   box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
+}
+header .head_header {
+  display: flex;
+  align-items: center;
+}
+header .head_header a {
+  text-decoration: none;
+  color: black;
 }
 header .localisation_header {
   background-color: lightgray;
@@ -224,7 +233,7 @@ header .box_header {
 
 .img_header_menu {
   position: absolute;
-  top: 75px;
+  top: 60px;
 }
 .img_header_menu img {
   width: 100%;
@@ -237,7 +246,8 @@ header .box_header {
   flex-direction: column;
   align-items: center;
   min-width: 100%;
-  margin-top: 240px;
+  margin-top: 205px;
+  padding-bottom: 70px;
   border-radius: 20px 20px 0 0;
 }
 .menu .top_menu {
@@ -257,6 +267,10 @@ header .box_header {
   text-align: left !important;
   font-weight: unset !important;
   border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+}
+.menu button {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=menu.css.map */
