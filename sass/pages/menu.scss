@@ -42,6 +42,7 @@ header .box_header{
             @include gray-degrade($color-gray);
             position: absolute;
             right: 30px;
+            font-size: 23px;
         }
     }
     & .type_plat{

@@ -28,6 +28,31 @@
   .ensemble_restaurants .carte_restaurant {
     margin: 15px;
   }
+
+  .menu .top_menu i {
+    font-size: 30px !important;
+  }
+
+  .group_plats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .ensemble_plats {
+    min-width: unset !important;
+  }
+
+  .plats_position_tablette {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .carte_plat {
+    min-width: 325px;
+  }
 }
 /*MEDIA QUERIES desktop*/
 body {
@@ -120,9 +145,10 @@ button:hover {
 }
 
 .ensemble_plats {
+  display: flex;
+  flex-direction: column;
   border-radius: 20px 20px 0 0;
   justify-content: space-between;
-  align-items: center;
   text-align: center;
   margin-bottom: 10px;
   margin-top: -55px;
@@ -298,6 +324,7 @@ header .box_header {
   background-color: #f3f3f3;
   position: absolute;
   right: 30px;
+  font-size: 23px;
 }
 .menu .type_plat {
   text-align: left !important;

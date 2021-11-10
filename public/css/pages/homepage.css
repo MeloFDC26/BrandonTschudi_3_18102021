@@ -28,6 +28,31 @@
   .ensemble_restaurants .carte_restaurant {
     margin: 15px;
   }
+
+  .menu .top_menu i {
+    font-size: 30px !important;
+  }
+
+  .group_plats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .ensemble_plats {
+    min-width: unset !important;
+  }
+
+  .plats_position_tablette {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .carte_plat {
+    min-width: 325px;
+  }
 }
 /*MEDIA QUERIES desktop*/
 body {

@@ -2,9 +2,10 @@
 @import "../utils/mixins";
 
 .ensemble_plats{
+    display: flex;
+    flex-direction: column;
     border-radius: 20px 20px 0 0;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
     margin-bottom: 10px;
     margin-top: -55px;
