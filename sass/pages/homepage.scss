@@ -8,6 +8,11 @@
 @import "../layout/footer";
 @import "../layout/header";
 
+section a{
+    text-decoration: none;
+    color: black;
+}
+
 .buttons_fonctionnement h2, .restaurants h2{
     align-self: flex-start;
     padding-left: 20px;

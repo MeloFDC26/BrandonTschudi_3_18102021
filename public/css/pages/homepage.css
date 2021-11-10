@@ -276,6 +276,11 @@ header .box_header button {
   margin-top: 15px;
 }
 
+section a {
+  text-decoration: none;
+  color: black;
+}
+
 .buttons_fonctionnement h2, .restaurants h2 {
   align-self: flex-start;
   padding-left: 20px;
