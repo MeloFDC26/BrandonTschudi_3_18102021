@@ -19,6 +19,15 @@
     display: unset;
     align-items: unset;
   }
+
+  .ensemble_restaurants {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .ensemble_restaurants .carte_restaurant {
+    margin: 15px;
+  }
 }
 /*MEDIA QUERIES desktop*/
 body {
@@ -114,8 +123,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   background-color: #f3f3f3;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   min-width: 100%;
+  padding-bottom: 50px;
 }
 
 .ensemble_restaurants {
@@ -304,11 +314,6 @@ section a {
 .buttons_fonctionnement h2, .restaurants h2 {
   align-self: flex-start;
   padding-left: 20px;
-}
-
-.restaurants {
-  margin-bottom: 0px;
-  padding-bottom: 50px;
 }
 
 /*# sourceMappingURL=homepage.css.map */

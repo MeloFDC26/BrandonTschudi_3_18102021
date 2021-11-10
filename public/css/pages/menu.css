@@ -19,6 +19,15 @@
     display: unset;
     align-items: unset;
   }
+
+  .ensemble_restaurants {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .ensemble_restaurants .carte_restaurant {
+    margin: 15px;
+  }
 }
 /*MEDIA QUERIES desktop*/
 body {
