@@ -94,7 +94,7 @@ body {
   font-weight: bold;
   position: relative;
   padding: 30px;
-  margin: 15px;
+  margin: 20px;
   border-radius: 25px 25px 25px 25px;
   max-height: 70px;
   min-width: 300px;
@@ -121,6 +121,10 @@ body {
 
 button:hover {
   cursor: pointer;
+  background-color: #f5edff;
+}
+button:hover i {
+  color: #9356dc;
 }
 
 @keyframes remplissage-coeur {
