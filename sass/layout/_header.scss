@@ -17,9 +17,15 @@ header{
     & .head_header{
         display: flex;
         align-items: center;
+        position: relative;
         & a{
             text-decoration: none;
             color: black;
+            & i{
+            position: absolute;
+            top: 20px;
+            left: -60px;
+            }
         }
     }
     & .localisation_header{
