@@ -3,7 +3,7 @@
 
 footer{
     @include flex(column, space-between);
-    background-color: gray;
+    background-color: $color-footer;
     text-align: left;
     margin-bottom: 0px;
     padding-bottom: 10px;

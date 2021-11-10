@@ -1,69 +1,69 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-header{
-    @include flex(column, space-between, center);
-    & img{
-        width: 170px;
-        margin: 15px;
-    }
-    & .box_img_header{
-        display: flex;
-        z-index: 1;
-        width: 100%;
-        justify-content: center;
-        box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
-    }
-    & .head_header{
-        display: flex;
-        align-items: center;
-        position: relative;
-        & a{
-            text-decoration: none;
-            color: black;
-            & i{
-            position: absolute;
-            top: 20px;
-            left: -60px;
-            }
-        }
-    }
-    & .localisation_header{
-        background-color: lightgray;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding-top: 15px;
-        padding-bottom: 15px;
+header {
+  @include flex(column, space-between, center);
+  position: relative;
+  & img {
+    width: 170px;
+    margin: 15px;
+  }
+  & .box_img_header {
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
+  }
+  & .head_header {
+    display: flex;
+    align-items: center;
+    & a {
+      text-decoration: none;
+      color: black;
+      & i {
         position: absolute;
-        top: 0;
-        left: 0;
-        & i{
-            margin-right: 20px;
-        }
-        & .label_localisation{
-            margin-right: 20px;
-            font-size: medium;
-        }
+        top: 20px;
+        left: 25px;
+      }
     }
-    & .box_header{
-        display: flex;
-        flex-direction: column;
-        @include gray-degrade($color-gray);
-        position: relative;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        min-width: 100%;
-        text-align: center;
-        align-items: center;
-        & h1{
-            margin-top: 30px;
-        }
-        & #label_h1_header{
-            margin-bottom: 20px;
-        }
-        & button{
-            margin-top: 15px;
-        }
+  }
+  & .localisation_header {
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    & i {
+      margin-right: 20px;
     }
+    & .label_localisation {
+      margin-right: 20px;
+      font-size: medium;
+    }
+  }
+  & .box_header {
+    display: flex;
+    flex-direction: column;
+    @include gray-degrade($color-gray);
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-width: 100%;
+    text-align: center;
+    align-items: center;
+    & h1 {
+      margin-top: 30px;
+    }
+    & #label_h1_header {
+      margin-bottom: 20px;
+    }
+    & button {
+      margin-top: 15px;
+    }
+  }
 }
