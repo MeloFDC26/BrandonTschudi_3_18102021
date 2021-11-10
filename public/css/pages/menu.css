@@ -118,6 +118,7 @@ button:hover {
   padding-bottom: 5px;
 }
 .ensemble_plats .carte_plat .label_et_prix {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -280,6 +281,10 @@ header .box_header {
 }
 .menu button {
   margin-top: 30px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=menu.css.map */

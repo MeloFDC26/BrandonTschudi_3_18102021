@@ -27,6 +27,7 @@
             padding-bottom: 5px;
         }
         & .label_et_prix{
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
             & .prix_plat{
