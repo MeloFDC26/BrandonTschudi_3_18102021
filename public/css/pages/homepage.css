@@ -35,7 +35,6 @@ body {
 .fa-heart {
   color: linear-gradient(#9356DC, #FF79DA);
   background-color: white;
-  /* pour le voir */
 }
 
 .fa-heart:hover {
