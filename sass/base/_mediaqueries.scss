@@ -1,0 +1,26 @@
+#bloc_page{
+    max-width: 1400px;
+    margin: 0;
+    padding: 0;
+}
+
+/*MEDIA QUERIES tablette*/
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    #ensemble_buttons_fonctionnement{
+        display: flex;
+        flex-direction: row !important;
+        & button{
+            min-width: unset;
+        }
+    }
+
+    .buttons_fonctionnement{
+        display: unset;
+        align-items: unset;
+    }
+}
+
+/*MEDIA QUERIES desktop*/
+@media screen and (min-width: 1024px) {
+    
+}

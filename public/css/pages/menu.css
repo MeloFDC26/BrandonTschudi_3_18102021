@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+#bloc_page {
+  max-width: 1400px;
+  margin: 0;
+  padding: 0;
+}
+
+/*MEDIA QUERIES tablette*/
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  #ensemble_buttons_fonctionnement {
+    display: flex;
+    flex-direction: row !important;
+  }
+  #ensemble_buttons_fonctionnement button {
+    min-width: unset;
+  }
+
+  .buttons_fonctionnement {
+    display: unset;
+    align-items: unset;
+  }
+}
+/*MEDIA QUERIES desktop*/
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -33,9 +55,6 @@ body {
   position: relative;
   margin-bottom: 50px;
   margin-top: 20px;
-}
-.buttons_fonctionnement h1 {
-  align-self: flex-start;
 }
 .buttons_fonctionnement button {
   font-weight: bold;
