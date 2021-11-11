@@ -140,18 +140,16 @@ body {
 .carte_restaurant i {
   background-color: white;
 }
-.carte_restaurant i .far {
-  opacity: 0;
-}
 
 .carte_restaurant i:hover {
   cursor: pointer;
-  background: linear-gradient(#9356dc, #ff79da);
+  font-weight: bold;
+  color: #9356dc;
   box-sizing: border-box;
   transform-origin: 50% bottom;
   transform: scaleY(1);
   animation-name: remplissage-coeur;
-  animation-duration: 900ms;
+  animation-duration: 700ms;
 }
 
 .buttons_fonctionnement {

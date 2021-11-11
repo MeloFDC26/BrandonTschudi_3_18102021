@@ -3,17 +3,16 @@
 
 .carte_restaurant i {
     background-color: white;
-    & .far{
-        opacity: 0;
-    }
+    
 }
 
 .carte_restaurant i:hover{
     cursor: pointer;
-    background: $color-gradient;
+    font-weight: bold;
+    color: $color-primary;
     box-sizing: border-box;
     transform-origin: 50% bottom;
     transform: scaleY(1);
     animation-name: remplissage-coeur;
-    animation-duration: 900ms;
+    animation-duration: 700ms;
 }
