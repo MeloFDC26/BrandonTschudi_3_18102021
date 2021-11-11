@@ -56,5 +56,50 @@
 
 /*MEDIA QUERIES desktop*/
 @media screen and (min-width: 1024px) {
-    
+    #ensemble_buttons_fonctionnement{
+        display: flex;
+        flex-direction: row !important;
+        & button{
+            min-width: unset;
+        }
+    }
+
+    .buttons_fonctionnement{
+        display: unset;
+        align-items: unset;
+    }
+
+    .ensemble_restaurants{
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        & .carte_restaurant{
+            margin: 45px;
+        }
+    }
+
+    .menu .top_menu i{
+        font-size: 30px !important;
+    }
+
+    .group_plats{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .ensemble_plats{
+        min-width: unset !important;
+    }
+
+    .plats_position_tablette{
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .carte_plat{
+        min-width: 325px;
+    }
 }
