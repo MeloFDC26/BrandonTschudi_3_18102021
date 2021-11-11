@@ -10,3 +10,7 @@
     flex-direction: $direction;
     justify-content: $justify;
 }
+
+@mixin decline-green-new ($color: $color-tertiary) {
+    color: darken($color, 35%);
+}
