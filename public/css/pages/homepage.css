@@ -89,17 +89,21 @@ body {
     transform: scaleY(1);
   }
 }
-.fa-heart {
-  color: linear-gradient(#9356dc, #ff79da);
+.carte_restaurant i {
   background-color: white;
 }
+.carte_restaurant i .far {
+  opacity: 0;
+}
 
-.fa-heart:hover {
+.carte_restaurant i:hover {
   cursor: pointer;
   background: linear-gradient(#9356dc, #ff79da);
+  box-sizing: border-box;
+  transform-origin: 50% bottom;
   transform: scaleY(1);
   animation-name: remplissage-coeur;
-  animation-duration: 1000ms;
+  animation-duration: 900ms;
 }
 
 .buttons_fonctionnement {
