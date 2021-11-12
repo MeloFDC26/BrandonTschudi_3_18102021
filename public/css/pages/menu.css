@@ -190,9 +190,14 @@ button:hover i {
 }
 .carte_restaurant i {
   background-color: white;
+  z-index: 1;
 }
 
-.carte_restaurant i:hover {
+.carte_restaurant #coeur_plein {
+  opacity: 0;
+}
+
+.carte_restaurant #coeur_plein:hover {
   cursor: pointer;
   font-weight: bold;
   color: #9356dc;
@@ -201,6 +206,7 @@ button:hover i {
   transform: scaleY(1);
   animation-name: remplissage-coeur;
   animation-duration: 700ms;
+  z-index: 2;
 }
 
 .ensemble_plats {

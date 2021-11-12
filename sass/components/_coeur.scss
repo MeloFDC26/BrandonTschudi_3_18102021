@@ -3,10 +3,15 @@
 
 .carte_restaurant i {
     background-color: white;
+    z-index: 1;
     
 }
 
-.carte_restaurant i:hover{
+.carte_restaurant #coeur_plein{
+    opacity: 0;
+}
+
+.carte_restaurant #coeur_plein:hover{
     cursor: pointer;
     font-weight: bold;
     color: $color-primary;
@@ -15,4 +20,5 @@
     transform: scaleY(1);
     animation-name: remplissage-coeur;
     animation-duration: 700ms;
+    z-index: 2;
 }
