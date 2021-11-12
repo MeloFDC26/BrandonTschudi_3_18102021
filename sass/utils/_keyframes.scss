@@ -13,3 +13,24 @@
         opacity: 1;
     }
 }
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+
+@keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

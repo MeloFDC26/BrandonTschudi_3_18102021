@@ -20,5 +20,6 @@
     transform: scaleY(1);
     animation-name: remplissage-coeur;
     animation-duration: 700ms;
+    animation-fill-mode: both;
     z-index: 2;
 }

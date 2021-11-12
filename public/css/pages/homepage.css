@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
-#bloc_page {
+.bloc_page {
   max-width: 1400px;
   margin: auto;
   padding: 0;
@@ -112,6 +112,65 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
+@keyframes remplissage-coeur {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0, 4;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loader_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 900;
+  pointer-events: none;
+  animation: fade-out 3s ease-out forwards;
+  width: 100%;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 15px solid transparent;
+  border-top-color: #9356dc;
+  border-bottom-color: #9356dc;
+  border-radius: 50%;
+  animation: rotate 1.2s linear;
+  animation-iteration-count: 3;
+}
+
 .button_component {
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
@@ -142,6 +201,25 @@ body {
     opacity: 1;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .carte_restaurant i {
   background-color: white;
   z-index: 1;
@@ -160,6 +238,7 @@ body {
   transform: scaleY(1);
   animation-name: remplissage-coeur;
   animation-duration: 700ms;
+  animation-fill-mode: both;
   z-index: 2;
 }
 
