@@ -58,12 +58,20 @@
     }
 
     .desserts{
-        margin: 0px -212px 0px auto !important;
+        margin: 0px -105px 0px auto !important;
+        max-width: 30% !important;
     }
 
     .check_carte{
         min-width: 45% !important;
         min-height: 98px;
+    }
+
+    .carte_slider{
+        max-height: 80px !important;
+        & .desserts{
+            
+        }
     }
 }
 
@@ -117,6 +125,7 @@
     }
 
     .desserts{
-        margin: 0px -245px 0px auto !important;
+        margin: 0px -120px 0px auto !important;
+        max-width: 30% !important;
     }
 }
