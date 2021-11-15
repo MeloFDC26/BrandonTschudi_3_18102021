@@ -1,41 +1,64 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-.ensemble_plats{
+.ensemble_plats {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 0 0;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -55px;
+  min-width: 90%;
+  & .carte_plat {
     display: flex;
-    flex-direction: column;
-    border-radius: 20px 20px 0 0;
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: -55px;
-    min-width: 90%;
-    & .carte_plat{
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-        background-color: white;
-        color: black;
-        margin-bottom: 20px;
-        position: relative;
-        align-items: flex-start;
-        justify-content: center;
-        min-height: 70px;
-        padding-left: 10px;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        & .nom_plat{
-            font-weight: bold;
-            padding-bottom: 5px;
-        }
-        & .label_et_prix{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            & .prix_plat{
-                position: absolute;
-                right: 15px;
-            }
-        }
+    flex: 1;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+    position: relative;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 70px;
+    padding-left: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    & .description_plat {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      overflow: hidden;
+      padding-top: 15px;
+      & .nom_plat {
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
     }
+    & .carte_slider {
+      display: flex;
+      align-self: flex-end;
+      flex: 1;
+      padding-bottom: unset;
+      min-height: 70px;
+      & .check_carte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        color: white;
+        font-size: x-large;
+        min-width: 35%;
+        border-radius: 0 20px 20px 0;
+      }
+      & .prix_plat {
+        font-weight: bold;
+        flex: 1;
+        align-self: flex-end;
+        padding-right: 20px;
+        padding-bottom: 12px;
+        text-align: right;
+      }
+    }
+  }
 }
-

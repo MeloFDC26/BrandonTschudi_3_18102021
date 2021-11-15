@@ -300,30 +300,54 @@ button:hover i {
 }
 .ensemble_plats .carte_plat {
   display: flex;
-  flex-direction: column;
+  flex: 1;
+  flex-direction: row;
   border-radius: 20px;
   background-color: white;
   color: black;
   margin-bottom: 20px;
   position: relative;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: center;
   min-height: 70px;
   padding-left: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.ensemble_plats .carte_plat .nom_plat {
+.ensemble_plats .carte_plat .description_plat {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  overflow: hidden;
+  padding-top: 15px;
+}
+.ensemble_plats .carte_plat .description_plat .nom_plat {
   font-weight: bold;
   padding-bottom: 5px;
 }
-.ensemble_plats .carte_plat .label_et_prix {
+.ensemble_plats .carte_plat .carte_slider {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-self: flex-end;
+  flex: 1;
+  padding-bottom: unset;
+  min-height: 70px;
 }
-.ensemble_plats .carte_plat .label_et_prix .prix_plat {
-  position: absolute;
-  right: 15px;
+.ensemble_plats .carte_plat .carte_slider .check_carte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: white;
+  font-size: x-large;
+  min-width: 35%;
+  border-radius: 0 20px 20px 0;
+}
+.ensemble_plats .carte_plat .carte_slider .prix_plat {
+  font-weight: bold;
+  flex: 1;
+  align-self: flex-end;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  text-align: right;
 }
 
 footer {
