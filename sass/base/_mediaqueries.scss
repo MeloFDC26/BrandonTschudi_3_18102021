@@ -53,8 +53,17 @@
         min-width: 325px;
     }
 
+    .plats_position_tablette .carte_slider{
+        margin: 0px -95px 0px auto !important;
+    }
+
+    .desserts{
+        margin: 0px -212px 0px auto !important;
+    }
+
     .check_carte{
         min-width: 45% !important;
+        min-height: 98px;
     }
 }
 
@@ -94,7 +103,7 @@
     }
 
     .ensemble_plats{
-        min-width: unset !important;
+        min-width: 65% !important;
     }
 
     .plats_position_tablette{
@@ -105,5 +114,9 @@
 
     .carte_plat{
         min-width: 325px;
+    }
+
+    .desserts{
+        margin: 0px -245px 0px auto !important;
     }
 }

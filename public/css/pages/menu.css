@@ -54,8 +54,17 @@
     min-width: 325px;
   }
 
+  .plats_position_tablette .carte_slider {
+    margin: 0px -95px 0px auto !important;
+  }
+
+  .desserts {
+    margin: 0px -212px 0px auto !important;
+  }
+
   .check_carte {
     min-width: 45% !important;
+    min-height: 98px;
   }
 }
 /*MEDIA QUERIES desktop*/
@@ -94,7 +103,7 @@
   }
 
   .ensemble_plats {
-    min-width: unset !important;
+    min-width: 65% !important;
   }
 
   .plats_position_tablette {
@@ -105,6 +114,10 @@
 
   .carte_plat {
     min-width: 325px;
+  }
+
+  .desserts {
+    margin: 0px -245px 0px auto !important;
   }
 }
 body {
@@ -352,6 +365,7 @@ button:hover i {
   display: flex;
   flex: 1;
   flex-direction: row;
+  flex-wrap: nowrap;
   border-radius: 20px;
   background-color: white;
   color: black;
@@ -359,7 +373,7 @@ button:hover i {
   position: relative;
   align-items: center;
   justify-content: center;
-  min-height: 70px;
+  max-height: 70px;
   padding-left: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden;
@@ -371,7 +385,7 @@ button:hover i {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-top: 10px;
-  max-width: 60%;
+  max-width: 65%;
   margin-bottom: 5px;
 }
 .ensemble_plats .carte_plat .description_plat .nom_plat {
@@ -384,8 +398,8 @@ button:hover i {
   flex: 1;
   max-width: 60%;
   padding-bottom: unset;
-  min-height: 80px;
-  margin: 0px -90px 0px auto;
+  min-height: 70px;
+  margin: 0px -95px 0px auto;
   transition: margin 0.2s ease-in-out;
 }
 .ensemble_plats .carte_plat .carte_slider .check_carte {
@@ -398,6 +412,7 @@ button:hover i {
   min-width: 40%;
   border-radius: 0 20px 20px 0;
   margin-right: 5px;
+  flex: 1;
 }
 .ensemble_plats .carte_plat .carte_slider .check_carte i {
   transition: transform 0.6s ease-in-out;
