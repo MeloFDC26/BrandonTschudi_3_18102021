@@ -344,7 +344,7 @@ button:hover i {
   border-radius: 20px 20px 0 0;
   justify-content: space-between;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-top: -55px;
   min-width: 90%;
 }
@@ -370,7 +370,9 @@ button:hover i {
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-top: 15px;
+  padding-top: 10px;
+  max-width: 60%;
+  margin-bottom: 5px;
 }
 .ensemble_plats .carte_plat .description_plat .nom_plat {
   font-weight: bold;
@@ -382,7 +384,7 @@ button:hover i {
   flex: 1;
   max-width: 60%;
   padding-bottom: unset;
-  min-height: 70px;
+  min-height: 80px;
   margin: 0px -90px 0px auto;
   transition: margin 0.2s ease-in-out;
 }
@@ -395,6 +397,7 @@ button:hover i {
   font-size: x-large;
   min-width: 40%;
   border-radius: 0 20px 20px 0;
+  margin-right: 5px;
 }
 .ensemble_plats .carte_plat .carte_slider .check_carte i {
   transition: transform 0.6s ease-in-out;
