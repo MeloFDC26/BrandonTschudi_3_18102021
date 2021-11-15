@@ -5,7 +5,7 @@
 }
 
 /*MEDIA QUERIES tablette*/
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (min-width: 550px) and (max-width: 1024px) {
     #ensemble_buttons_fonctionnement{
         display: flex;
         flex-direction: row !important;
@@ -74,6 +74,16 @@
 
 /*MEDIA QUERIES desktop*/
 @media screen and (min-width: 1024px) {
+    body{
+        max-width: 1400px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .img_header_menu{
+        max-width: 1400px;
+    }
+
     #ensemble_buttons_fonctionnement{
         display: flex;
         flex-direction: row !important;
