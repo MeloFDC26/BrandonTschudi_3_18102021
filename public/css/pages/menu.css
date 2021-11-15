@@ -144,6 +144,11 @@ body {
     opacity: 0;
   }
 }
+@keyframes slide {
+  to {
+    transform: translateY(0);
+  }
+}
 .loader_container {
   display: flex;
   justify-content: center;
@@ -159,8 +164,7 @@ body {
   animation: fade-out 3s ease-out forwards;
   width: 100%;
 }
-
-.loader {
+.loader_container .loader {
   width: 100px;
   height: 100px;
   border: 15px solid transparent;
@@ -266,6 +270,11 @@ button:hover i {
     opacity: 0;
   }
 }
+@keyframes slide {
+  to {
+    transform: translateY(0);
+  }
+}
 .carte_restaurant i {
   background-color: white;
   z-index: 1;
@@ -288,6 +297,43 @@ button:hover i {
   z-index: 2;
 }
 
+@keyframes remplissage-coeur {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0, 4;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slide {
+  to {
+    transform: translateY(0);
+  }
+}
 .ensemble_plats {
   display: flex;
   flex-direction: column;
@@ -312,6 +358,7 @@ button:hover i {
   min-height: 70px;
   padding-left: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
 }
 .ensemble_plats .carte_plat .description_plat {
   display: flex;
@@ -330,6 +377,8 @@ button:hover i {
   flex: 1;
   padding-bottom: unset;
   min-height: 70px;
+  margin: 0px -110px 0px auto;
+  transition: margin 0.2s ease-in-out;
 }
 .ensemble_plats .carte_plat .carte_slider .check_carte {
   display: flex;
@@ -338,16 +387,30 @@ button:hover i {
   background-color: #99e2d0;
   color: white;
   font-size: x-large;
-  min-width: 35%;
+  min-width: 30%;
   border-radius: 0 20px 20px 0;
+}
+.ensemble_plats .carte_plat .carte_slider .check_carte i {
+  transition: transform 0.6s ease-in-out;
+  transform: rotate(-180deg);
+  transition-delay: 0.2s;
 }
 .ensemble_plats .carte_plat .carte_slider .prix_plat {
   font-weight: bold;
   flex: 1;
   align-self: flex-end;
-  padding-right: 20px;
+  padding-right: 35px;
   padding-bottom: 12px;
   text-align: right;
+}
+
+.carte_plat:hover .carte_slider {
+  transform: translateX(-38%);
+  transition: transform 350ms ease-in-out;
+  animation-name: slide;
+}
+.carte_plat:hover .carte_slider .check_carte i {
+  transform: rotate(0);
 }
 
 footer {

@@ -34,3 +34,9 @@
       opacity: 0;
     }
   }
+
+  @keyframes slide {
+    to {
+      transform: translateY(0);
+    }
+  }

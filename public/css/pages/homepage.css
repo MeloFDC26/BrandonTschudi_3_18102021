@@ -144,6 +144,11 @@ body {
     opacity: 0;
   }
 }
+@keyframes slide {
+  to {
+    transform: translateY(0);
+  }
+}
 .loader_container {
   display: flex;
   justify-content: center;
@@ -159,8 +164,7 @@ body {
   animation: fade-out 3s ease-out forwards;
   width: 100%;
 }
-
-.loader {
+.loader_container .loader {
   width: 100px;
   height: 100px;
   border: 15px solid transparent;
@@ -218,6 +222,11 @@ body {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes slide {
+  to {
+    transform: translateY(0);
   }
 }
 .carte_restaurant i {
