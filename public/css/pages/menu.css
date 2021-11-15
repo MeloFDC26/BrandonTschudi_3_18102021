@@ -437,9 +437,9 @@ button:hover i {
   flex: 1;
 }
 .ensemble_plats .carte_plat .carte_slider .check_carte i {
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform: rotate(-180deg);
-  transition-delay: 0.2s;
+  transition-delay: 0.16s;
 }
 .ensemble_plats .carte_plat .carte_slider .prix_plat {
   font-weight: bold;
