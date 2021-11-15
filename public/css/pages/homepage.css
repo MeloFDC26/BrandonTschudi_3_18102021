@@ -129,10 +129,11 @@
 
   .carte_plat {
     min-width: 325px;
+    max-width: 800px;
   }
 
   .desserts {
-    margin: 0px -120px 0px auto !important;
+    margin: 0px -115px -7px auto !important;
     max-width: 30% !important;
   }
 
