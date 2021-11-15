@@ -125,6 +125,10 @@
     margin: 0px -120px 0px auto !important;
     max-width: 30% !important;
   }
+
+  footer {
+    z-index: 1;
+  }
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -205,14 +209,11 @@ body {
   border-width: 0px !important;
   height: 50px;
   padding: 0px 15px;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   max-width: 60%;
   min-width: 175px;
 }
-
 .button_component:hover {
-  -webkit-filter: brightness(1.2);
   filter: brightness(1.2);
   cursor: pointer;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16), 0 3px 20px rgba(0, 0, 0, 0.23);
@@ -220,7 +221,6 @@ body {
 
 @keyframes remplissage-coeur {
   0% {
-    -webkit-transform: scaleY(0);
     transform: scaleY(0);
     opacity: 0;
   }
@@ -228,7 +228,6 @@ body {
     opacity: 0, 4;
   }
   100% {
-    -webkit-transform: scaleY(1);
     transform: scaleY(1);
     opacity: 1;
   }
@@ -273,7 +272,6 @@ body {
   box-sizing: border-box;
   transform-origin: 50% bottom;
   transform: scaleY(1);
-  -webkit-animation-name: remplissage-coeur;
   animation-name: remplissage-coeur;
   animation-duration: 700ms;
   animation-fill-mode: both;
@@ -281,29 +279,14 @@ body {
 }
 
 .buttons_fonctionnement {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
   margin-bottom: 50px;
   margin-top: 20px;
 }
-
-.buttons_fonctionnement h1 {
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
 .buttons_fonctionnement button {
   font-weight: bold;
   position: relative;
@@ -312,28 +295,16 @@ body {
   border-radius: 25px 25px 25px 25px;
   max-height: 70px;
   min-width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   border-width: 0px !important;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-
 .buttons_fonctionnement button i {
   padding-right: 20px;
 }
-
 .buttons_fonctionnement button .numero_etape_fonctionnement {
   border-radius: 50px;
   background-color: #9356dc;
@@ -354,12 +325,7 @@ button:hover i {
 }
 
 .restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f3f3f3;
   margin-bottom: 0px;
@@ -368,24 +334,13 @@ button:hover i {
 }
 
 .ensemble_restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .title_restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: left;
   margin-top: 50px;
@@ -395,16 +350,9 @@ button:hover i {
   border: 0px solid white;
   border-radius: 20px;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   text-align: left;
   font-size: medium;
@@ -414,30 +362,20 @@ button:hover i {
   margin-top: 0px;
   max-width: 95%;
   margin-bottom: 15px;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-
 .carte_restaurant img {
   border-radius: 20px 20px 0 0;
   padding: 0px;
   margin: 0;
-  -o-object-fit: cover;
   object-fit: cover;
   min-width: 341px;
   height: 230px;
 }
-
 .carte_restaurant .label_restaurant {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
-
 .carte_restaurant .label_nouveau {
   position: absolute;
   top: 15px;
@@ -447,19 +385,16 @@ button:hover i {
   color: #2c9c81;
   border-radius: 2px;
 }
-
 .carte_restaurant .nom_restaurant {
   font-weight: bold;
   padding-left: 10px;
   padding-top: 15px;
   padding-bottom: 5px;
 }
-
 .carte_restaurant .lieu_restaurant {
   padding-left: 10px;
   padding-bottom: 15px;
 }
-
 .carte_restaurant i {
   position: absolute;
   right: 20px;
@@ -471,25 +406,15 @@ button:hover i {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
   align-items: baseline;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #353535;
   text-align: left;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
-
 footer img {
   position: relative;
   max-width: 30%;
@@ -497,7 +422,6 @@ footer img {
   padding-top: 20px;
   filter: invert(100%);
 }
-
 footer ul {
   padding-left: 20px;
 }
@@ -506,11 +430,9 @@ footer a {
   color: white;
   text-decoration: none;
 }
-
 footer a .fa-utensils {
   padding-right: 15px;
 }
-
 footer a .fa-hands-helping {
   padding-right: 8px;
 }
@@ -521,49 +443,27 @@ footer li {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
 }
-
 header img {
   width: 170px;
   margin: 15px;
 }
-
 header .box_img_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: 1;
   width: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
   box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
 }
-
 header .head_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
 header .head_header a {
   text-decoration: none;
   color: black;
@@ -575,11 +475,7 @@ header .head_header a i {
 }
 header .localisation_header {
   background-color: lightgray;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   padding-top: 15px;
@@ -588,23 +484,15 @@ header .localisation_header {
   top: 0;
   left: 0;
 }
-
 header .localisation_header i {
   margin-right: 20px;
 }
-
 header .localisation_header .label_localisation {
   margin-right: 20px;
   font-size: medium;
 }
-
 header .box_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f3f3f3;
   position: relative;
@@ -612,19 +500,14 @@ header .box_header {
   padding-bottom: 60px;
   min-width: 100%;
   text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
 header .box_header h1 {
   margin-top: 30px;
 }
-
 header .box_header #label_h1_header {
   margin-bottom: 20px;
 }
-
 header .box_header button {
   margin-top: 15px;
 }
@@ -635,16 +518,8 @@ section a {
 }
 
 .buttons_fonctionnement h2, .restaurants h2 {
-  -ms-flex-item-align: start;
   align-self: flex-start;
   padding-left: 20px;
 }
-
-.restaurants {
-  margin-bottom: 0px;
-  padding-bottom: 50px;
-}
-
-/*# sourceMappingURL=homepage.css.map */
 
 /*# sourceMappingURL=homepage.css.map */

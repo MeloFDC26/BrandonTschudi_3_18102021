@@ -125,6 +125,10 @@
     margin: 0px -120px 0px auto !important;
     max-width: 30% !important;
   }
+
+  footer {
+    z-index: 1;
+  }
 }
 body {
   font-family: "Roboto", sans-serif;
