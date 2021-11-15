@@ -31,6 +31,7 @@
       flex-direction: column;
       text-align: left;
       overflow: hidden;
+      text-overflow: ellipsis;
       padding-top: 15px;
       & .nom_plat {
         font-weight: bold;
@@ -41,9 +42,10 @@
       display: flex;
       align-self: flex-end;
       flex: 1;
+      max-width: 60%;
       padding-bottom: unset;
       min-height: 70px;
-      margin: 0px -110px 0px auto;
+      margin: 0px -90px 0px auto;
       transition: margin 0.2s ease-in-out;
       & .check_carte {
         display: flex;
@@ -52,7 +54,7 @@
         background-color: $color-tertiary;
         color: white;
         font-size: x-large;
-        min-width: 30%;
+        min-width: 40%;
         border-radius: 0 20px 20px 0;
         & i{
           transition: transform 0.6s ease-in-out;
@@ -64,7 +66,7 @@
         font-weight: bold;
         flex: 1;
         align-self: flex-end;
-        padding-right: 35px;
+        padding-right: 15px;
         padding-bottom: 12px;
         text-align: right;
       }
@@ -74,7 +76,7 @@
 
 .carte_plat:hover {
   & .carte_slider {
-    transform: translateX(-38%);
+    transform: translateX(-40%);
     transition: transform 350ms ease-in-out;
     animation-name: slide;
     & .check_carte i {
