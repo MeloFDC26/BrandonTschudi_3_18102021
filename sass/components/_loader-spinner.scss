@@ -13,16 +13,17 @@
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 900;
     pointer-events: none;
-    animation: fade-out 3s ease-out forwards;
+    animation: fade-out 2.5s ease-out forwards;
     width: 100%;
     & .loader {
         width: 100px;
         height: 100px;
         border: 15px solid transparent;
         border-top-color: $color-primary;
-        border-bottom-color: $color-primary;
+        border-bottom-color: $color-secondary;
         border-radius: 50%;
-        animation: rotate 1.2s linear;
+        border-width: 15px;
+        animation: rotate 1.3s linear;
         animation-iteration-count: 3;
     }
 }
