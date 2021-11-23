@@ -38,12 +38,15 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    text-align: center;
     & i {
-      margin-right: 20px;
+      margin-left: 80px;
     }
     & .label_localisation {
-      margin-right: 20px;
+      margin-left: 20px;
       font-size: medium;
+      background-color: lightgray;
+      border: none;
     }
   }
   & .box_header {

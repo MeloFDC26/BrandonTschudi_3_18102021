@@ -495,13 +495,16 @@ header .localisation_header {
   position: absolute;
   top: 0;
   left: 0;
+  text-align: center;
 }
 header .localisation_header i {
-  margin-right: 20px;
+  margin-left: 80px;
 }
 header .localisation_header .label_localisation {
-  margin-right: 20px;
+  margin-left: 20px;
   font-size: medium;
+  background-color: lightgray;
+  border: none;
 }
 header .box_header {
   display: flex;
