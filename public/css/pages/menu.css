@@ -317,6 +317,7 @@ button:hover i {
 .carte_restaurant i {
   background-color: white;
   z-index: 1;
+  font-size: large;
 }
 
 .carte_restaurant #coeur_plein {
@@ -328,7 +329,6 @@ button:hover i {
   font-weight: bold;
   color: #9356dc;
   box-sizing: border-box;
-  transform-origin: 50% bottom;
   transform: scaleY(1);
   animation-name: remplissage-coeur;
   animation-duration: 700ms;
