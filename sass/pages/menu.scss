@@ -63,3 +63,8 @@ header .box_header{
         color: black;
     }      
 }
+
+.ensemble_plats{
+    opacity:0;
+    animation: transition 1s ease-in-out 2s forwards;
+}

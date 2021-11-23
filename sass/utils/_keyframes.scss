@@ -40,3 +40,14 @@
       transform: translateY(0);
     }
   }
+
+@keyframes transition {
+    0%   { 
+      margin-left: -100px;
+      opacity:0; 
+    }
+    100% { 
+      margin-left: 0;
+      opacity:1; 
+    }
+}
