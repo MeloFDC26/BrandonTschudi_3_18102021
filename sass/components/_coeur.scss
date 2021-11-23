@@ -1,22 +1,21 @@
 @import "../utils/variables";
 @import "../utils/keyframes";
 
-.carte_restaurant i {
+.carte_restaurant i, .top_menu i{
     background-color: white;
     z-index: 1;
     font-size: large;
 }
 
-.carte_restaurant #coeur_plein{
+.carte_restaurant #coeur_plein, .top_menu #coeur_plein{
     opacity: 0;
 }
 
-.carte_restaurant #coeur_plein:hover{
+.carte_restaurant #coeur_plein:hover, .top_menu #coeur_plein:hover{
     cursor: pointer;
     font-weight: bold;
     color: $color-primary;
     box-sizing: border-box;
-    
     transform: scaleY(1);
     animation-name: remplissage-coeur;
     animation-duration: 700ms;
