@@ -35,13 +35,14 @@
 }
 
 .heart_container{
-    min-width: 50px;
+    min-width: 60px;
     &:hover{
         & .coeur_plein{
             display: flex !important;
             animation-name: remplissage-coeur;
             animation-duration: 700ms;
             animation-fill-mode: both;
+            cursor: pointer;
         }
         & .coeur_vide{
             display: none;

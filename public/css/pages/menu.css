@@ -344,13 +344,14 @@ button:hover i {
 }
 
 .heart_container {
-  min-width: 50px;
+  min-width: 60px;
 }
 .heart_container:hover .coeur_plein {
   display: flex !important;
   animation-name: remplissage-coeur;
   animation-duration: 700ms;
   animation-fill-mode: both;
+  cursor: pointer;
 }
 .heart_container:hover .coeur_vide {
   display: none;
@@ -644,6 +645,9 @@ header .box_header {
   padding-top: 50px;
   width: 12%;
   font-size: medium;
+}
+.menu .carte_plat:hover {
+  cursor: pointer;
 }
 .menu button {
   margin-top: 30px;

@@ -49,7 +49,12 @@ header .box_header{
         padding-top: 50px;
         width: 12%;
         font-size: medium;
-    } 
+    }
+    & .carte_plat{
+        &:hover{
+            cursor: pointer;
+        }
+    }
     & button{
         margin-top: 30px;
     }
