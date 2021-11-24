@@ -39,12 +39,6 @@ header .box_header{
         align-items: center;
         align-self: flex-start;
         padding-left: 20px;
-        & i{
-            @include gray-degrade($color-gray);
-            position: absolute;
-            right: 30px;
-            font-size: 23px;
-        }
     }
     & .type_plat{
         text-align: left !important;

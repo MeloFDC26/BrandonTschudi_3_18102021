@@ -334,26 +334,30 @@ button:hover i {
     opacity: 1;
   }
 }
-.carte_restaurant i, .top_menu i {
-  background-color: white;
-  z-index: 1;
-  font-size: large;
-}
-
-.carte_restaurant #coeur_plein, .top_menu #coeur_plein {
+.coeur_plein {
+  display: none !important;
   opacity: 0;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: linear-gradient(#9356dc, #ff79da);
 }
 
-.carte_restaurant #coeur_plein:hover, .top_menu #coeur_plein:hover {
-  cursor: pointer;
-  font-weight: bold;
-  color: #9356dc;
-  box-sizing: border-box;
-  transform: scaleY(1);
+.heart_container {
+  min-width: 50px;
+}
+.heart_container:hover .coeur_plein {
+  display: flex !important;
   animation-name: remplissage-coeur;
   animation-duration: 700ms;
   animation-fill-mode: both;
-  z-index: 2;
+}
+.heart_container:hover .coeur_vide {
+  display: none;
+}
+
+.coeur_plein, .coeur_vide {
+  font-size: x-large;
 }
 
 @keyframes remplissage-coeur {
@@ -630,12 +634,6 @@ header .box_header {
   align-items: center;
   align-self: flex-start;
   padding-left: 20px;
-}
-.menu .top_menu i {
-  background-color: #f3f3f3;
-  position: absolute;
-  right: 30px;
-  font-size: 23px;
 }
 .menu .type_plat {
   text-align: left !important;

@@ -288,26 +288,30 @@ body {
     opacity: 1;
   }
 }
-.carte_restaurant i, .top_menu i {
-  background-color: white;
-  z-index: 1;
-  font-size: large;
-}
-
-.carte_restaurant #coeur_plein, .top_menu #coeur_plein {
+.coeur_plein {
+  display: none !important;
   opacity: 0;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: linear-gradient(#9356dc, #ff79da);
 }
 
-.carte_restaurant #coeur_plein:hover, .top_menu #coeur_plein:hover {
-  cursor: pointer;
-  font-weight: bold;
-  color: #9356dc;
-  box-sizing: border-box;
-  transform: scaleY(1);
+.heart_container {
+  min-width: 50px;
+}
+.heart_container:hover .coeur_plein {
+  display: flex !important;
   animation-name: remplissage-coeur;
   animation-duration: 700ms;
   animation-fill-mode: both;
-  z-index: 2;
+}
+.heart_container:hover .coeur_vide {
+  display: none;
+}
+
+.coeur_plein, .coeur_vide {
+  font-size: x-large;
 }
 
 .buttons_fonctionnement {
@@ -427,10 +431,14 @@ button:hover i {
   padding-left: 10px;
   padding-bottom: 15px;
 }
-.carte_restaurant i {
-  position: absolute;
-  right: 20px;
-  bottom: 30px;
+.carte_restaurant .label_container {
+  display: flex;
+  justify-content: space-between;
+}
+.carte_restaurant .heart_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #buttons_fonctionnement i:active {

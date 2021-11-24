@@ -1,24 +1,54 @@
 @import "../utils/variables";
 @import "../utils/keyframes";
 
-.carte_restaurant i, .top_menu i{
-    background-color: white;
-    z-index: 1;
-    font-size: large;
-}
+// .fas{
+//     & .fa-heart{
+//         background-color: white;
+//         z-index: 1;
+//         font-size: large;
+//     }
+// }
 
-.carte_restaurant #coeur_plein, .top_menu #coeur_plein{
+// .carte_restaurant #coeur_plein, .top_menu #coeur_plein{
+//     opacity: 0;
+// }
+
+// .carte_restaurant #coeur_plein:hover, .top_menu #coeur_plein:hover{
+//     cursor: pointer;
+//     font-weight: bold;
+//     color: $color-primary;
+//     box-sizing: border-box;
+//     transform: scaleY(1);
+//     animation-name: remplissage-coeur;
+//     animation-duration: 700ms;
+//     animation-fill-mode: both;
+//     z-index: 2;
+// }
+
+.coeur_plein{
+    display: none !important;
     opacity: 0;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: $color-gradient;
 }
 
-.carte_restaurant #coeur_plein:hover, .top_menu #coeur_plein:hover{
-    cursor: pointer;
-    font-weight: bold;
-    color: $color-primary;
-    box-sizing: border-box;
-    transform: scaleY(1);
-    animation-name: remplissage-coeur;
-    animation-duration: 700ms;
-    animation-fill-mode: both;
-    z-index: 2;
+.heart_container{
+    min-width: 50px;
+    &:hover{
+        & .coeur_plein{
+            display: flex !important;
+            animation-name: remplissage-coeur;
+            animation-duration: 700ms;
+            animation-fill-mode: both;
+        }
+        & .coeur_vide{
+            display: none;
+        }
+    }
+}
+
+.coeur_plein, .coeur_vide{
+    font-size: x-large;
 }

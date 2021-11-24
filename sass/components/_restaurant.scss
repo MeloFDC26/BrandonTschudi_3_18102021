@@ -70,10 +70,14 @@
         padding-left: 10px;
         padding-bottom: 15px;
     }
-    & i{
-        position: absolute;
-        right: 20px;
-        bottom: 30px;
+    & .label_container{
+        display: flex;
+        justify-content: space-between;
+    }
+    & .heart_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
