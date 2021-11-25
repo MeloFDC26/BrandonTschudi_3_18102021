@@ -71,6 +71,11 @@
   .carte_slider {
     max-height: 80px !important;
   }
+
+  .dessert_part {
+    min-width: 70%;
+    align-self: center;
+  }
 }
 /*MEDIA QUERIES desktop*/
 @media screen and (min-width: 1024px) {
