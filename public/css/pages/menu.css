@@ -87,6 +87,8 @@
 
   .img_header_menu {
     max-width: 1400px;
+    max-height: 400px;
+    overflow: hidden;
   }
 
   #ensemble_buttons_fonctionnement {
@@ -111,6 +113,10 @@
     margin: 45px;
   }
 
+  .menu {
+    min-height: 1200px;
+  }
+
   .menu .top_menu i {
     font-size: 30px !important;
   }
@@ -123,13 +129,18 @@
   }
 
   .ensemble_plats {
-    min-width: 65% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    max-width: 50% !important;
+    justify-content: center !important;
+    padding-top: 200px;
+    flex: 1;
   }
 
   .plats_position_tablette {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 25px;
   }
 
   .carte_plat {
@@ -137,13 +148,21 @@
     max-width: 800px;
   }
 
+  .check_carte {
+    min-width: 40px;
+  }
+
   .desserts {
-    margin: 0px -115px -7px auto !important;
+    margin: 0px -47px -7px auto !important;
     max-width: 30% !important;
   }
 
+  .dessert_part {
+    margin: 25px;
+  }
+
   footer {
-    z-index: 999;
+    z-index: 999 !important;
   }
 }
 body {
