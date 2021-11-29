@@ -369,6 +369,7 @@ button:hover i {
 
 .heart_container {
   min-width: 30px;
+  padding-right: 5px;
 }
 .heart_container:hover .coeur_plein {
   display: flex !important;

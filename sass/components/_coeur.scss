@@ -36,6 +36,7 @@
 
 .heart_container{
     min-width: 30px;
+    padding-right: 5px;
     &:hover{
         & .coeur_plein{
             display: flex !important;
