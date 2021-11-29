@@ -322,7 +322,7 @@ body {
 }
 
 .heart_container {
-  min-width: 60px;
+  min-width: 30px;
 }
 .heart_container:hover .coeur_plein {
   display: flex !important;
