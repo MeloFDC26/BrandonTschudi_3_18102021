@@ -468,6 +468,9 @@ button:hover i {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  right: 3px;
+  bottom: 25px;
 }
 
 #buttons_fonctionnement i:active {
