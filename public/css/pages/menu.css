@@ -164,6 +164,9 @@
   footer {
     z-index: 999 !important;
   }
+  footer img {
+    max-width: 20% !important;
+  }
 }
 body {
   font-family: "Roboto", sans-serif;

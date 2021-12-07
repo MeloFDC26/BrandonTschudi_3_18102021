@@ -163,5 +163,8 @@
 
     footer{
         z-index: 999 !important;
+        & img{
+            max-width: 20% !important;
+        }
     }
 }
