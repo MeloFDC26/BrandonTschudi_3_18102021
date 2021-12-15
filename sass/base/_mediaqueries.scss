@@ -40,7 +40,8 @@
     }
 
     .ensemble_plats{
-        min-width: unset !important;
+        width: 60%;
+        align-self: center;
     }
 
     .carte_plat{
@@ -101,34 +102,18 @@
         font-size: 30px !important;
     }
 
-    .group_plats{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+    .type_plat{
+        width: 4% !important;
     }
 
     .ensemble_plats{
-        display: flex !important;
-        flex-direction: row !important;
-        max-width: 50% !important;
-        justify-content: center !important;
-        padding-top: 200px;
-        flex: 1;
+        align-self: center;
+        width: 60%;
     }
 
     .carte_plat{
         min-width: 325px;
         max-width: 800px;
-    }
-
-    .desserts{
-        margin: 0px -47px -7px auto !important;
-        max-width: 30% !important;
-    }
-
-    .dessert_part{
-        margin: 25px;
     }
 
     footer{
