@@ -187,10 +187,15 @@ body {
 @keyframes transition {
   0% {
     margin-left: -100px;
+    margin-right: 100px;
     opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
   }
   100% {
     margin-left: 0;
+    margin-right: 0px;
     opacity: 1;
   }
 }
@@ -324,10 +329,15 @@ button:hover i {
 @keyframes transition {
   0% {
     margin-left: -100px;
+    margin-right: 100px;
     opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
   }
   100% {
     margin-left: 0;
+    margin-right: 0px;
     opacity: 1;
   }
 }
@@ -399,10 +409,15 @@ button:hover i {
 @keyframes transition {
   0% {
     margin-left: -100px;
+    margin-right: 100px;
     opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
   }
   100% {
     margin-left: 0;
+    margin-right: 0px;
     opacity: 1;
   }
 }
@@ -638,7 +653,7 @@ header .box_header {
 /*ANIMATION APPARITION PLATS*/
 .ensemble_plats {
   opacity: 0;
-  animation: transition 1s ease-in-out 0.2s forwards;
+  animation: transition 1s ease-in-out 0.7s forwards;
 }
 .ensemble_plats .entrees {
   opacity: 0;
