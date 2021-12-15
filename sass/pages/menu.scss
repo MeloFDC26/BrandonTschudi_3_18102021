@@ -10,6 +10,10 @@
 @import "../layout/footer";
 @import "../layout/header";
 
+.loader_container{
+    display: none;
+}
+
 header .box_header{
     display: none;
 }
@@ -79,17 +83,17 @@ header .box_header{
 
 .ensemble_plats {
     opacity:0;
-    animation: transition 1.2s ease-in-out 2s forwards;
+    animation: transition 1s ease-in-out 0.2s forwards;
     & .entrees{
         opacity:0;
-        animation: transition 1s ease-in-out 2s forwards;
+        animation: transition 1s ease-in-out 0.2s forwards;
     }
     & .plats{
         opacity:0;
-        animation: transition 1s ease-in-out 2.2s forwards;
+        animation: transition 1s ease-in-out 0.2s forwards;
     }
     & .desserts{
         opacity:0;
-        animation: transition 1s ease-in-out 2.4s forwards;
+        animation: transition 1s ease-in-out 0.2s forwards;
     }
   }
