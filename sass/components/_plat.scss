@@ -3,109 +3,58 @@
 @import "../utils/keyframes";
 
 .ensemble_plats {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px 20px 0 0;
-  justify-content: space-between;
-  text-align: center;
-  margin-bottom: 15px;
-  margin-top: -55px;
-  min-width: 90%;
   & .carte_plat {
     display: flex;
-    flex: 1;
     flex-direction: row;
-    flex-wrap: nowrap;
     border-radius: 20px;
     background-color: white;
     color: black;
     margin-bottom: 20px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
     max-height: 80px;
-    padding-left: 12px;
-    padding-bottom: 7px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    overflow: hidden;
     & .description_plat {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
+      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      padding-top: 10px;
-      max-width: 65%;
-      margin-bottom: 5px;
+      width: 100%;
+      padding: 12px;
       & .nom_plat {
         font-weight: bold;
         padding-bottom: 5px;
       }
     }
-    & .carte_slider {
-      display: flex;
+    & .prix_plat {
+      font-weight: bold;
+      width: 80px;
       align-self: flex-end;
-      flex: 1;
-      max-width: 60%;
-      padding-bottom: unset;
-      min-height: 87px;
-      margin: 0px -95px -7px auto;
-      transition: margin 0.2s ease-in-out;
-      & .check_carte {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-tertiary;
-        color: white;
-        font-size: x-large;
-        min-width: 40%;
-        border-radius: 0 20px 20px 0;
-        margin-right: 5px;
-        flex: 1;
-        & i{
-          transition: transform 0.3s ease-in-out;
-          transform: rotate(-180deg);
-          transition-delay: 0.16s;
-        }
-      }
-      & .prix_plat {
-        font-weight: bold;
-        flex: 1;
-        align-self: flex-end;
-        padding-right: 15px;
-        padding-bottom: 12px;
-        text-align: right;
+      padding-bottom: 5px;
+    }
+    & .check_carte {
+      display: flex;
+      border-radius: 0 20px 20px 0;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-tertiary;
+      color: white;
+      font-size: x-large;
+      width: 0px;
+      transition: width 350ms ease-in-out;
+      overflow: hidden;
+      & i {
+        transition: transform 0.3s ease-in-out;
+        transform: rotate(-180deg);
+        transition-delay: 0.16s;
       }
     }
+    
   }
 }
 
 .carte_plat:hover {
-  & .carte_slider {
-    transform: translateX(-40%);
-    transition: transform 350ms ease-in-out;
-    animation-name: slide;
-    & .check_carte i {
+  & .check_carte{
+    width: 90px;
+    i {
       transform: rotate(0);
     }
-  }
-}
-
-/*ANIMATION APPARITION PLATS*/
-
-.ensemble_plats {
-  opacity:0;
-  animation: transition 1.2s ease-in-out 2s forwards;
-  & .plats_position_tablette{
-      opacity:0;
-      animation: transition 1s ease-in-out 2s forwards;
-  }
-  & .plat_anim{
-      opacity:0;
-      animation: transition 1s ease-in-out 2.2s forwards;
-  }
-  & .dessert_part{
-      opacity:0;
-      animation: transition 1s ease-in-out 2.4s forwards;
-  }
+  } 
 }

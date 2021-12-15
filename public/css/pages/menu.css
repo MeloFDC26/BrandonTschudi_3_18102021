@@ -44,28 +44,8 @@
     min-width: unset !important;
   }
 
-  .plats_position_tablette {
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-  }
-
   .carte_plat {
     min-width: 325px;
-  }
-
-  .plats_position_tablette .carte_slider {
-    margin: 0px -95px 0px auto !important;
-  }
-
-  .desserts {
-    margin: 0px -105px 0px auto !important;
-    max-width: 42% !important;
-  }
-
-  .check_carte {
-    min-width: 45% !important;
-    min-height: 98px;
   }
 
   .carte_slider {
@@ -137,19 +117,9 @@
     flex: 1;
   }
 
-  .plats_position_tablette {
-    display: flex;
-    flex-direction: column;
-    margin: 25px;
-  }
-
   .carte_plat {
     min-width: 325px;
     max-width: 800px;
-  }
-
-  .check_carte {
-    min-width: 40px;
   }
 
   .desserts {
@@ -436,109 +406,56 @@ button:hover i {
     opacity: 1;
   }
 }
-.ensemble_plats {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px 20px 0 0;
-  justify-content: space-between;
-  text-align: center;
-  margin-bottom: 15px;
-  margin-top: -55px;
-  min-width: 90%;
-}
 .ensemble_plats .carte_plat {
   display: flex;
-  flex: 1;
   flex-direction: row;
-  flex-wrap: nowrap;
   border-radius: 20px;
   background-color: white;
   color: black;
   margin-bottom: 20px;
-  position: relative;
-  align-items: center;
-  justify-content: center;
   max-height: 80px;
-  padding-left: 12px;
-  padding-bottom: 7px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  overflow: hidden;
 }
 .ensemble_plats .carte_plat .description_plat {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-top: 10px;
-  max-width: 65%;
-  margin-bottom: 5px;
+  width: 100%;
+  padding: 12px;
 }
 .ensemble_plats .carte_plat .description_plat .nom_plat {
   font-weight: bold;
   padding-bottom: 5px;
 }
-.ensemble_plats .carte_plat .carte_slider {
-  display: flex;
+.ensemble_plats .carte_plat .prix_plat {
+  font-weight: bold;
+  width: 80px;
   align-self: flex-end;
-  flex: 1;
-  max-width: 60%;
-  padding-bottom: unset;
-  min-height: 87px;
-  margin: 0px -95px -7px auto;
-  transition: margin 0.2s ease-in-out;
+  padding-bottom: 5px;
 }
-.ensemble_plats .carte_plat .carte_slider .check_carte {
+.ensemble_plats .carte_plat .check_carte {
   display: flex;
+  border-radius: 0 20px 20px 0;
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
   color: white;
   font-size: x-large;
-  min-width: 40%;
-  border-radius: 0 20px 20px 0;
-  margin-right: 5px;
-  flex: 1;
+  width: 0px;
+  transition: width 350ms ease-in-out;
+  overflow: hidden;
 }
-.ensemble_plats .carte_plat .carte_slider .check_carte i {
+.ensemble_plats .carte_plat .check_carte i {
   transition: transform 0.3s ease-in-out;
   transform: rotate(-180deg);
   transition-delay: 0.16s;
 }
-.ensemble_plats .carte_plat .carte_slider .prix_plat {
-  font-weight: bold;
-  flex: 1;
-  align-self: flex-end;
-  padding-right: 15px;
-  padding-bottom: 12px;
-  text-align: right;
-}
 
-.carte_plat:hover .carte_slider {
-  transform: translateX(-40%);
-  transition: transform 350ms ease-in-out;
-  animation-name: slide;
+.carte_plat:hover .check_carte {
+  width: 90px;
 }
-.carte_plat:hover .carte_slider .check_carte i {
+.carte_plat:hover .check_carte i {
   transform: rotate(0);
-}
-
-/*ANIMATION APPARITION PLATS*/
-.ensemble_plats {
-  opacity: 0;
-  animation: transition 1.2s ease-in-out 2s forwards;
-}
-.ensemble_plats .plats_position_tablette {
-  opacity: 0;
-  animation: transition 1s ease-in-out 2s forwards;
-}
-.ensemble_plats .plat_anim {
-  opacity: 0;
-  animation: transition 1s ease-in-out 2.2s forwards;
-}
-.ensemble_plats .dessert_part {
-  opacity: 0;
-  animation: transition 1s ease-in-out 2.4s forwards;
 }
 
 footer {
@@ -668,11 +585,17 @@ header .box_header {
   background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-width: 100%;
   margin-top: 205px;
   padding-bottom: 70px;
   border-radius: 20px 20px 0 0;
+}
+.menu .ensemble_plats {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 0 0;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 .menu .top_menu {
   display: flex;
@@ -701,6 +624,24 @@ header .box_header {
 .menu a {
   text-decoration: none;
   color: black;
+}
+
+/*ANIMATION APPARITION PLATS*/
+.ensemble_plats {
+  opacity: 0;
+  animation: transition 1.2s ease-in-out 2s forwards;
+}
+.ensemble_plats .entrees {
+  opacity: 0;
+  animation: transition 1s ease-in-out 2s forwards;
+}
+.ensemble_plats .plats {
+  opacity: 0;
+  animation: transition 1s ease-in-out 2.2s forwards;
+}
+.ensemble_plats .desserts {
+  opacity: 0;
+  animation: transition 1s ease-in-out 2.4s forwards;
 }
 
 /*# sourceMappingURL=menu.css.map */

@@ -27,11 +27,17 @@ header .box_header{
     @include gray-degrade($color-gray);
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-width: 100%;
     margin-top: 205px;
     padding-bottom: 70px;
     border-radius: 20px 20px 0 0;
+    & .ensemble_plats{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px 20px 0 0;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
     & .top_menu{
         display: flex;
         flex-direction: row;
@@ -64,3 +70,21 @@ header .box_header{
     }      
 }
 
+/*ANIMATION APPARITION PLATS*/
+
+.ensemble_plats {
+    opacity:0;
+    animation: transition 1.2s ease-in-out 2s forwards;
+    & .entrees{
+        opacity:0;
+        animation: transition 1s ease-in-out 2s forwards;
+    }
+    & .plats{
+        opacity:0;
+        animation: transition 1s ease-in-out 2.2s forwards;
+    }
+    & .desserts{
+        opacity:0;
+        animation: transition 1s ease-in-out 2.4s forwards;
+    }
+  }
