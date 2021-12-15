@@ -603,7 +603,7 @@ header .box_header {
   justify-content: space-between;
   align-items: center;
   align-self: flex-start;
-  padding-left: 20px;
+  padding-left: 10px;
   min-width: 95%;
 }
 .menu .type_plat {
@@ -614,12 +614,17 @@ header .box_header {
   padding-top: 50px;
   width: 12%;
   font-size: medium;
+  margin-left: 15px;
+}
+.menu .ensemble_type_plat {
+  margin: 15px;
 }
 .menu .carte_plat:hover {
   cursor: pointer;
 }
 .menu button {
   margin-top: 30px;
+  align-self: center;
 }
 .menu a {
   text-decoration: none;
