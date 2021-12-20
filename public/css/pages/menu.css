@@ -41,8 +41,12 @@
   }
 
   .ensemble_plats {
-    width: 60%;
-    align-self: center;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .entrees, .plats, .desserts {
+    width: 50%;
   }
 
   .carte_plat {
@@ -107,8 +111,12 @@
   }
 
   .ensemble_plats {
-    align-self: center;
-    width: 60%;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .entrees, .plats, .desserts {
+    width: 50%;
   }
 
   .carte_plat {
@@ -432,6 +440,7 @@ button:hover i {
   width: 80px;
   align-self: flex-end;
   padding-bottom: 5px;
+  text-align: center;
 }
 .ensemble_plats .carte_plat .check_carte {
   display: flex;

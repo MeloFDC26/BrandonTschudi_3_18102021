@@ -40,8 +40,12 @@
     }
 
     .ensemble_plats{
-        width: 60%;
-        align-self: center;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .entrees, .plats, .desserts{
+        width: 50%;
     }
 
     .carte_plat{
@@ -107,8 +111,12 @@
     }
 
     .ensemble_plats{
-        align-self: center;
-        width: 60%;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .entrees, .plats, .desserts{
+        width: 50%;
     }
 
     .carte_plat{
