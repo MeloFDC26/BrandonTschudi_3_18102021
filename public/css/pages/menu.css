@@ -513,7 +513,6 @@ header {
 }
 header img {
   width: 170px;
-  margin: 15px;
 }
 header .box_img_header {
   display: flex;
@@ -521,10 +520,12 @@ header .box_img_header {
   width: 100%;
   justify-content: center;
   box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
+  padding: 10px;
 }
 header .head_header {
   display: flex;
   align-items: center;
+  margin: 15px;
 }
 header .head_header a {
   text-decoration: none;

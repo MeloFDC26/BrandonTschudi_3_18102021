@@ -6,7 +6,6 @@ header {
   position: relative;
   & img {
     width: 170px;
-    margin: 15px;
   }
   & .box_img_header {
     display: flex;
@@ -14,10 +13,12 @@ header {
     width: 100%;
     justify-content: center;
     box-shadow: 0 4px 3px lightgrey, 0 3px 3px grey;
+    padding: 10px;
   }
   & .head_header {
     display: flex;
     align-items: center;
+    margin: 15px;
     & a {
       text-decoration: none;
       color: black;
