@@ -433,7 +433,7 @@ button:hover i {
 }
 .ensemble_plats .carte_plat .description_plat .nom_plat {
   font-weight: bold;
-  padding-bottom: 5px;
+  margin: 2px;
 }
 .ensemble_plats .carte_plat .prix_plat {
   font-weight: bold;
@@ -610,6 +610,9 @@ header .box_header {
   border-radius: 20px 20px 0 0;
   justify-content: space-between;
   margin-bottom: 15px;
+}
+.menu .ensemble_plats h3 {
+  font-weight: lighter;
 }
 .menu .top_menu {
   display: flex;
