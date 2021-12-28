@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+@media screen and (max-width: 550px) {
+  .ensemble_plats {
+    min-height: 1230px;
+    max-height: 1230px;
+  }
+}
 /*MEDIA QUERIES tablette*/
 @media screen and (min-width: 550px) and (max-width: 1024px) {
   #ensemble_buttons_fonctionnement {
@@ -45,7 +51,9 @@
     flex-wrap: wrap;
   }
 
-  .entrees, .plats, .desserts {
+  .entrees,
+.plats,
+.desserts {
     width: 50%;
   }
 
@@ -115,7 +123,13 @@
     flex-wrap: wrap;
   }
 
-  .entrees, .plats, .desserts {
+  .desserts {
+    margin-top: 50px !important;
+  }
+
+  .entrees,
+.plats,
+.desserts {
     width: 50%;
   }
 

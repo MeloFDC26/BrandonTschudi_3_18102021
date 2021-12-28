@@ -1,133 +1,147 @@
-.bloc_page{
-    max-width: 1400px;
-    margin: auto;
-    padding: 0;
+.bloc_page {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .ensemble_plats {
+    min-height: 1230px;
+    max-height: 1230px;
+  }
 }
 
 /*MEDIA QUERIES tablette*/
 @media screen and (min-width: 550px) and (max-width: 1024px) {
-    #ensemble_buttons_fonctionnement{
-        display: flex;
-        flex-direction: row !important;
-        & button{
-            min-width: unset;
-        }
+  #ensemble_buttons_fonctionnement {
+    display: flex;
+    flex-direction: row !important;
+    & button {
+      min-width: unset;
     }
+  }
 
-    .buttons_fonctionnement{
-        display: unset;
-        align-items: unset;
-    }
+  .buttons_fonctionnement {
+    display: unset;
+    align-items: unset;
+  }
 
-    .ensemble_restaurants{
-        display: flex;
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        & .carte_restaurant{
-            margin: 15px;
-        }
+  .ensemble_restaurants {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    & .carte_restaurant {
+      margin: 15px;
     }
+  }
 
-    .menu .top_menu i{
-        font-size: 30px !important;
-    }
+  .menu .top_menu i {
+    font-size: 30px !important;
+  }
 
-    .group_plats{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
+  .group_plats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 
-    .ensemble_plats{
-        flex-direction: row !important;
-        flex-wrap: wrap;
-    }
+  .ensemble_plats {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
 
-    .entrees, .plats, .desserts{
-        width: 50%;
-    }
+  .entrees,
+  .plats,
+  .desserts {
+    width: 50%;
+  }
 
-    .carte_plat{
-        min-width: 325px;
-    }
+  .carte_plat {
+    min-width: 325px;
+  }
 
-    .carte_slider{
-        max-height: 80px !important;
-    }
+  .carte_slider {
+    max-height: 80px !important;
+  }
 
-    .dessert_part{
-        min-width: 70%;
-        align-self: center;
-    }
+  .dessert_part {
+    min-width: 70%;
+    align-self: center;
+  }
 }
 
 /*MEDIA QUERIES desktop*/
 @media screen and (min-width: 1024px) {
-    body{
-        max-width: 1400px;
-        margin: auto;
-        padding: 0;
-    }
+  body {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0;
+  }
 
-    .img_header_menu{
-        max-width: 1400px;
-        max-height: 400px;
-        overflow: hidden;
-    }
+  .img_header_menu {
+    max-width: 1400px;
+    max-height: 400px;
+    overflow: hidden;
+  }
 
-    #ensemble_buttons_fonctionnement{
-        display: flex;
-        flex-direction: row !important;
-        & button{
-            min-width: unset;
-        }
+  #ensemble_buttons_fonctionnement {
+    display: flex;
+    flex-direction: row !important;
+    & button {
+      min-width: unset;
     }
+  }
 
-    .buttons_fonctionnement{
-        display: unset;
-        align-items: unset;
-    }
+  .buttons_fonctionnement {
+    display: unset;
+    align-items: unset;
+  }
 
-    .ensemble_restaurants{
-        display: flex;
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        & .carte_restaurant{
-            margin: 45px;
-        }
+  .ensemble_restaurants {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    & .carte_restaurant {
+      margin: 45px;
     }
+  }
 
-    .menu{
-        min-height: 1200px;
-    }
+  .menu {
+    min-height: 1200px;
+  }
 
-    .menu .top_menu i{
-        font-size: 30px !important;
-    }
+  .menu .top_menu i {
+    font-size: 30px !important;
+  }
 
-    .type_plat{
-        width: 4% !important;
-    }
+  .type_plat {
+    width: 4% !important;
+  }
 
-    .ensemble_plats{
-        flex-direction: row !important;
-        flex-wrap: wrap;
-    }
+  .ensemble_plats {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .desserts {
+    margin-top: 50px !important;
+  }
 
-    .entrees, .plats, .desserts{
-        width: 50%;
-    }
+  .entrees,
+  .plats,
+  .desserts {
+    width: 50%;
+  }
 
-    .carte_plat{
-        min-width: 325px;
-        max-width: 800px;
-    }
+  .carte_plat {
+    min-width: 325px;
+    max-width: 800px;
+  }
 
-    footer{
-        z-index: 999 !important;
-        & img{
-            max-width: 20% !important;
-        }
+  footer {
+    z-index: 999 !important;
+    & img {
+      max-width: 20% !important;
     }
+  }
 }
