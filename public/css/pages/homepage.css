@@ -179,16 +179,16 @@ body {
 }
 @keyframes transition {
   0% {
-    margin-left: -100px;
-    margin-right: 100px;
+    margin-bottom: -90px;
+    margin-top: 90px;
     opacity: 0;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.3;
   }
   100% {
-    margin-left: 0;
-    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     opacity: 1;
   }
 }
@@ -275,16 +275,16 @@ body {
 }
 @keyframes transition {
   0% {
-    margin-left: -100px;
-    margin-right: 100px;
+    margin-bottom: -90px;
+    margin-top: 90px;
     opacity: 0;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.3;
   }
   100% {
-    margin-left: 0;
-    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     opacity: 1;
   }
 }

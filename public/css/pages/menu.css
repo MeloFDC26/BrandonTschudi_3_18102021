@@ -179,16 +179,16 @@ body {
 }
 @keyframes transition {
   0% {
-    margin-left: -100px;
-    margin-right: 100px;
+    margin-bottom: -90px;
+    margin-top: 90px;
     opacity: 0;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.3;
   }
   100% {
-    margin-left: 0;
-    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     opacity: 1;
   }
 }
@@ -321,16 +321,16 @@ button:hover i {
 }
 @keyframes transition {
   0% {
-    margin-left: -100px;
-    margin-right: 100px;
+    margin-bottom: -90px;
+    margin-top: 90px;
     opacity: 0;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.3;
   }
   100% {
-    margin-left: 0;
-    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     opacity: 1;
   }
 }
@@ -401,16 +401,16 @@ button:hover i {
 }
 @keyframes transition {
   0% {
-    margin-left: -100px;
-    margin-right: 100px;
+    margin-bottom: -90px;
+    margin-top: 90px;
     opacity: 0;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.3;
   }
   100% {
-    margin-left: 0;
-    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     opacity: 1;
   }
 }
@@ -608,8 +608,6 @@ header .box_header {
   display: flex;
   flex-direction: column;
   border-radius: 20px 20px 0 0;
-  justify-content: space-between;
-  margin-bottom: 15px;
 }
 .menu .ensemble_plats h3 {
   font-weight: lighter;
@@ -628,7 +626,7 @@ header .box_header {
   font-weight: unset !important;
   border-bottom: 3px solid #99e2d0;
   padding-bottom: 5px;
-  padding-top: 50px;
+  padding-top: 25px;
   width: 12%;
   font-size: medium;
   margin-left: 15px;
@@ -651,19 +649,51 @@ header .box_header {
 /*ANIMATION APPARITION PLATS*/
 .ensemble_plats {
   opacity: 0;
-  animation: transition 1s ease-in-out 0.7s forwards;
+  animation: transition 1s ease-in-out 1s forwards;
+  min-height: 1230px;
+  max-height: 1230px;
+}
+.ensemble_plats .carte_plat {
+  margin-bottom: 20px !important;
 }
 .ensemble_plats .entrees {
   opacity: 0;
-  animation: transition 1s ease-in-out 0.2s forwards;
+  animation: transition 1.5s ease-in-out 1s forwards;
+}
+.ensemble_plats .entrees .apparition_1 {
+  animation: transition 0s ease-in-out 1.5s forwards;
+}
+.ensemble_plats .entrees .apparition_2 {
+  animation: transition 1s ease-in-out 1.1s forwards;
+}
+.ensemble_plats .entrees .apparition_3 {
+  animation: transition 1.3s ease-in-out 1.3s forwards;
 }
 .ensemble_plats .plats {
   opacity: 0;
-  animation: transition 1s ease-in-out 0.2s forwards;
+  animation: transition 1.5s ease-in-out 1s forwards;
+}
+.ensemble_plats .plats .apparition_1 {
+  animation: transition 0s ease-in-out 1.5s forwards;
+}
+.ensemble_plats .plats .apparition_2 {
+  animation: transition 1s ease-in-out 1.1s forwards;
+}
+.ensemble_plats .plats .apparition_3 {
+  animation: transition 1.3s ease-in-out 1.3s forwards;
 }
 .ensemble_plats .desserts {
   opacity: 0;
-  animation: transition 1s ease-in-out 0.2s forwards;
+  animation: transition 1.5s ease-in-out 1s forwards;
+}
+.ensemble_plats .desserts .apparition_1 {
+  animation: transition 0s ease-in-out 1.5s forwards;
+}
+.ensemble_plats .desserts .apparition_2 {
+  animation: transition 1s ease-in-out 1.1s forwards;
+}
+.ensemble_plats .desserts .apparition_3 {
+  animation: transition 1.3s ease-in-out 1.3s forwards;
 }
 
 /*# sourceMappingURL=menu.css.map */
