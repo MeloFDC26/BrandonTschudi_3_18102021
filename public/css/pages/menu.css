@@ -686,29 +686,29 @@ header .box_header {
 }
 .ensemble_plats .plats {
   opacity: 0;
-  animation: transition 1.5s ease-in-out 1s forwards;
+  animation: transition 2s ease-in-out 1.5s forwards;
 }
 .ensemble_plats .plats .apparition_1 {
-  animation: transition 0s ease-in-out 1.5s forwards;
+  animation: transition 0s ease-in-out 1.1s forwards;
 }
 .ensemble_plats .plats .apparition_2 {
-  animation: transition 1s ease-in-out 1.1s forwards;
+  animation: transition 1s ease-in-out 1.5s forwards;
 }
 .ensemble_plats .plats .apparition_3 {
-  animation: transition 1.3s ease-in-out 1.3s forwards;
+  animation: transition 1.3s ease-in-out 1.7s forwards;
 }
 .ensemble_plats .desserts {
   opacity: 0;
-  animation: transition 1.5s ease-in-out 1s forwards;
+  animation: transition 2s ease-in-out 2s forwards;
 }
 .ensemble_plats .desserts .apparition_1 {
-  animation: transition 0s ease-in-out 1.5s forwards;
+  animation: transition 0s ease-in-out 2s forwards;
 }
 .ensemble_plats .desserts .apparition_2 {
-  animation: transition 1s ease-in-out 1.1s forwards;
+  animation: transition 1s ease-in-out 2.2s forwards;
 }
 .ensemble_plats .desserts .apparition_3 {
-  animation: transition 1.3s ease-in-out 1.3s forwards;
+  animation: transition 1.3s ease-in-out 2.5s forwards;
 }
 
 /*# sourceMappingURL=menu.css.map */
